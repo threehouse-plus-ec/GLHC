@@ -1,0 +1,301 @@
+{
+  "sites": [
+    {
+      "id": "A1",
+      "name": "Bizmoune Cave",
+      "region": "Morocco",
+      "section": "A",
+      "section_label": "African Deep-Time Traditions",
+      "tradition": "Shell Bead Ornamentation",
+      "date_ya": 142000,
+      "date_label": "~142,000 ya",
+      "date_qualifier": "approximate",
+      "N": { "g25": 5680, "g269": 5279, "g30": 4733 },
+      "sources": ["[10] Sehasseh et al. (2021)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "practice":  { "strat": "PROBABLE",        "cust": "NULL", "annotation": "Continuity" },
+        "semantic":  { "strat": "UNDERDETERMINED", "cust": "NULL" }
+      },
+      "notes": "Perforated Nassarius shells with use-wear consistent with stringing. Deepest-dated ornamental tradition.",
+      "discriminant": {
+        "level": "semantic",
+        "condition": "Identification of recurring symbolic associations across temporally separated bead assemblages in the Maghreb, spanning >40 layers.",
+        "feasibility": "LOW"
+      }
+    },
+    {
+      "id": "A2",
+      "name": "Blombos Cave",
+      "region": "South Africa",
+      "section": "A",
+      "section_label": "African Deep-Time Traditions",
+      "tradition": "Symbolic Assemblage",
+      "date_ya": 100000,
+      "date_label": "~100,000\u201375,000 ya",
+      "date_qualifier": "range",
+      "N": { "g25": 4000, "g269": 3717, "g30": 3333 },
+      "sources": ["[11] Henshilwood et al. (2002)", "[12] Henshilwood et al. (2009)", "[13] Henshilwood et al. (2011)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "practice":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "semantic":  { "strat": "UNDERDETERMINED", "cust": "NULL" }
+      },
+      "notes": "Multi-component assemblage: engraved ochre, shell bead workshop, ochre processing toolkit. Practice CONFIRMED across M1\u2013M3 phases spanning ~25,000 years.",
+      "discriminant": {
+        "level": "semantic",
+        "condition": "Demonstration that cross-hatch motifs carried consistent referential meaning across the M1\u2013M3 phases.",
+        "feasibility": "LOW"
+      }
+    },
+    {
+      "id": "B1",
+      "name": "Madjedbebe",
+      "region": "Northern Territory, Australia",
+      "section": "B",
+      "section_label": "Sahul / Australian Corridor",
+      "tradition": "Ground-Edge Axes & Ochre",
+      "date_ya": 65000,
+      "date_label": "\u226565,000 ya",
+      "date_qualifier": "minimum",
+      "N": { "g25": 2600, "g269": 2416, "g30": 2167 },
+      "sources": ["[14] Clarkson et al. (2017)", "[15] Maloney et al. (2014)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED", "cust": "CONFIRMED" },
+        "practice":  { "strat": "CONFIRMED", "cust": "CONFIRMED" },
+        "semantic":  { "strat": "PROBABLE",  "cust": "PROBABLE", "annotation": "Gap-bridged" }
+      },
+      "notes": "Earliest occupation evidence for Sahul. Mirarr people maintain active connection. Ochre processing from lowest layers.",
+      "discriminant": null
+    },
+    {
+      "id": "B2",
+      "name": "Murujuga (Burrup Peninsula)",
+      "region": "Western Australia",
+      "section": "B",
+      "section_label": "Sahul / Australian Corridor",
+      "tradition": "Petroglyphs",
+      "date_ya": 50000,
+      "date_label": ">50,000 ya",
+      "date_qualifier": "estimated",
+      "N": { "g25": 2000, "g269": 1859, "g30": 1667 },
+      "sources": ["[16] Mulvaney (2015)", "[99] UNESCO WHC Decision 47 COM 8B.13 (2025)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED", "cust": "CONFIRMED" },
+        "practice":  { "strat": "PROBABLE",  "cust": "CONFIRMED", "annotation": "Continuity" },
+        "semantic":  { "strat": "PROBABLE",  "cust": "PROBABLE",  "annotation": "Continuity" }
+      },
+      "notes": "World\u2019s densest petroglyph concentration (>1M estimated). Depictions range from megafauna to contact-era. UNESCO 2025.",
+      "discriminant": null
+    },
+    {
+      "id": "B3",
+      "name": "Nawarla Gabarnmang",
+      "region": "Northern Territory, Australia",
+      "section": "B",
+      "section_label": "Sahul / Australian Corridor",
+      "tradition": "Painted Rockshelter",
+      "date_ya": 28000,
+      "date_label": "~48,000 ya (occupation); ~28,000 ya (art)",
+      "date_qualifier": "art date used for N",
+      "N": { "g25": 1120, "g269": 1041, "g30": 933 },
+      "sources": ["[24] David et al. (2011)", "[25] David et al. (2013)", "[26] David et al. (2017)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED", "cust": "CONFIRMED" },
+        "practice":  { "strat": "CONFIRMED", "cust": "CONFIRMED" },
+        "semantic":  { "strat": "PROBABLE",  "cust": "CONFIRMED", "annotation": "Gap-bridged" }
+      },
+      "notes": "Single rockshelter with continuous Jawoyn custodial connection. Semantic CONFIRMED via custodial channel. Strat gap: 28 ka \u2192 post-1440 CE.",
+      "discriminant": null
+    },
+    {
+      "id": "B4",
+      "name": "Kimberley",
+      "region": "Western Australia",
+      "section": "B",
+      "section_label": "Sahul / Australian Corridor",
+      "tradition": "Rock Art Sequence",
+      "date_ya": 17300,
+      "date_label": "~17,300 ya",
+      "date_qualifier": "approximate",
+      "N": { "g25": 692, "g269": 643, "g30": 577 },
+      "sources": ["[27] Finch et al. (2021)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "CONFIRMED" },
+        "practice":  { "strat": "CONFIRMED",      "cust": "CONFIRMED" },
+        "semantic":  { "strat": "UNDERDETERMINED", "cust": "PROBABLE" }
+      },
+      "notes": "Oldest securely dated in-situ rock painting in Australia. Gwion Gwion through Wandjina tradition.",
+      "discriminant": {
+        "level": "semantic-strat",
+        "condition": "Demonstration that Gwion \u2192 Wandjina stylistic transition represents semantic continuity rather than replacement.",
+        "feasibility": "MODERATE"
+      }
+    },
+    {
+      "id": "B5",
+      "name": "Sahul Ground-Edge Axes",
+      "region": "Australia (distributed)",
+      "section": "B",
+      "section_label": "Sahul / Australian Corridor",
+      "tradition": "Ground-Edge Axe Technology",
+      "date_ya": 35400,
+      "date_label": "\u226535,400 ya",
+      "date_qualifier": "minimum",
+      "N": { "g25": 1416, "g269": 1316, "g30": 1180 },
+      "sources": ["[28] Clarkson et al. (2017)", "[29] Geneste et al. (2012)", "[30] Hiscock et al. (2016)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED", "cust": "CONFIRMED" },
+        "practice":  { "strat": "CONFIRMED", "cust": "CONFIRMED" },
+        "semantic":  { "strat": "PROBABLE",  "cust": "PROBABLE", "annotation": "Continuity" }
+      },
+      "notes": "Distributed technological practice. Predates all non-Australian ground-edge technology by >20,000 years.",
+      "discriminant": null
+    },
+    {
+      "id": "C1",
+      "name": "Sulawesi (Leang Karampuang)",
+      "region": "Indonesia",
+      "section": "C",
+      "section_label": "Eurasia, Island SE Asia, Americas",
+      "tradition": "Cave Art",
+      "date_ya": 51200,
+      "date_label": "\u226551,200 ya (Karampuang); \u226567,800 ya (Metanduno)",
+      "date_qualifier": "minimum",
+      "N": { "g25": 2048, "g269": 1903, "g30": 1707 },
+      "sources": ["[36] Oktaviana et al. (2024)", "[91] Oktaviana et al. (2026)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "practice":  { "strat": "PROBABLE",        "cust": "NULL", "annotation": "Continuity" },
+        "semantic":  { "strat": "UNDERDETERMINED", "cust": "NULL" }
+      },
+      "notes": "Narrative scene (Karampuang) + hand stencil (Metanduno, Muna Island). Semantic downgraded v0.3. Probable LGM discontinuity.",
+      "discriminant": {
+        "level": "semantic",
+        "condition": "Recurring narrative motifs across temporally separated panels (>40 layers apart) within the Sulawesi tradition.",
+        "feasibility": "MODERATE"
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Swabian Jura",
+      "region": "Germany",
+      "section": "C",
+      "section_label": "Eurasia, Island SE Asia, Americas",
+      "tradition": "Figurines & Flutes",
+      "date_ya": 43000,
+      "date_label": "~43,000\u201335,000 ya",
+      "date_qualifier": "range",
+      "N": { "g25": 1720, "g269": 1599, "g30": 1433 },
+      "sources": ["[40] Conard (2009)", "[41] Conard et al. (2009)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED", "cust": "NULL" },
+        "practice":  { "strat": "PROBABLE",  "cust": "NULL", "annotation": "Continuity" },
+        "semantic":  { "strat": "RUPTURED",  "cust": "NULL" }
+      },
+      "notes": "Lion-human figurine, Venus of Hohle Fels, bone flutes. Earliest 3D figurative art and instruments in Europe. Semantic RUPTURED: no successor tradition.",
+      "discriminant": null
+    },
+    {
+      "id": "C3",
+      "name": "El Castillo",
+      "region": "Spain",
+      "section": "C",
+      "section_label": "Eurasia, Island SE Asia, Americas",
+      "tradition": "Hand Stencils & Discs",
+      "date_ya": 40800,
+      "date_label": "\u226540,800 ya",
+      "date_qualifier": "minimum",
+      "N": { "g25": 1632, "g269": 1517, "g30": 1360 },
+      "sources": ["[42] Pike et al. (2012)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "practice":  { "strat": "UNDERDETERMINED", "cust": "NULL" },
+        "semantic":  { "strat": "RUPTURED",        "cust": "NULL" }
+      },
+      "notes": "Possibly Neanderthal-authored. Guardian flag #5 (Neanderthal boundary).",
+      "discriminant": {
+        "level": "practice",
+        "condition": "Production technique consistent with either H. sapiens or Neanderthal repertoire.",
+        "feasibility": "MODERATE"
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Huenul 1",
+      "region": "Patagonia",
+      "section": "C",
+      "section_label": "Eurasia, Island SE Asia, Americas",
+      "tradition": "Comb-Motif Engravings",
+      "date_ya": 8200,
+      "date_label": "~8,200 ya",
+      "date_qualifier": "approximate",
+      "N": { "g25": 328, "g269": 305, "g30": 273 },
+      "sources": ["[92] Romero Villanueva et al. (2024)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "practice":  { "strat": "PROBABLE",        "cust": "NULL", "annotation": "Continuity" },
+        "semantic":  { "strat": "UNDERDETERMINED", "cust": "NULL" }
+      },
+      "notes": "Earliest dated comb-motif engravings in South America.",
+      "discriminant": {
+        "level": "semantic",
+        "condition": "Cross-site motif analysis demonstrating consistent compositional rules across >40 layers.",
+        "feasibility": "MODERATE"
+      }
+    },
+    {
+      "id": "C5",
+      "name": "Jiahu",
+      "region": "China",
+      "section": "C",
+      "section_label": "Eurasia, Island SE Asia, Americas",
+      "tradition": "Bone Flutes",
+      "date_ya": 9000,
+      "date_label": "~9,000\u20137,700 ya",
+      "date_qualifier": "range",
+      "N": { "g25": 360, "g269": 335, "g30": 300 },
+      "sources": ["[46] Zhang et al. (1999)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "practice":  { "strat": "CONFIRMED",      "cust": "NULL" },
+        "semantic":  { "strat": "UNDERDETERMINED", "cust": "NULL" }
+      },
+      "notes": "Playable multi-note bone flutes. Practice CONFIRMED across three occupation phases (~1,300 years). Earliest multi-note instruments in East Asia.",
+      "discriminant": {
+        "level": "semantic",
+        "condition": "Evidence that tonal system was intentional and transmitted (not independently reinvented per phase).",
+        "feasibility": "LOW"
+      }
+    },
+    {
+      "id": "C6",
+      "name": "Divje Babe",
+      "region": "Slovenia",
+      "section": "C",
+      "section_label": "Eurasia, Island SE Asia, Americas",
+      "tradition": "Contested Bone Object",
+      "date_ya": 54000,
+      "date_label": "~54,000 ya",
+      "date_qualifier": "approximate",
+      "N": { "g25": 2160, "g269": 2007, "g30": 1800 },
+      "sources": ["[95] Chase & Nowell (1998)", "[96] d'Errico et al. (1998)", "[97] Turk et al. (2006)", "[98] Turk et al. (2020)"],
+      "scores": {
+        "material":  { "strat": "UNDERDETERMINED", "cust": "NULL", "annotation": "as instrument" },
+        "practice":  { "strat": "NULL",            "cust": "NULL" },
+        "semantic":  { "strat": "NULL",            "cust": "NULL" }
+      },
+      "notes": "Cave bear femur with holes. Taphonomic dispute unresolved after 25+ years.",
+      "discriminant": {
+        "level": "material",
+        "condition": "Independent replication showing hole pattern cannot/can be produced by cave hyena gnawing.",
+        "feasibility": "MODERATE"
+      }
+    }
+  ],
+  "categories": [
+    { "id": "D1", "name": "Body Ornamentation", "scope": "global", "depth_ya": 142000, "note": "Species-wide capacity. Individual traditions scored separately." },
+    { "id": "D2", "name": "Mortuary Practice", "scope": "global", "depth_ya": 100000, "note": "Intentional burial from at least ~100,000 ya. Possibly Neanderthal from ~60,000+ ya." },
+    { "id": "D3", "name": "Music-Making", "scope": "global", "depth_ya": 43000, "note": "From Swabian Jura flutes. Divje Babe would extend to ~54,000 ya if confirmed." }
+  ]
+}

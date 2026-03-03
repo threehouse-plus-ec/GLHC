@@ -3,14 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Results &amp; Error Budget — Generator Layers</title>
+  <title>Results &amp; Error Budget - Generator Layers</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    .chart-container {
+      background: var(--parchment);
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      position: relative;
+    }
+    .chart-container canvas { max-height: 520px; }
+    .chart-legend {
+      display: flex; flex-wrap: wrap; gap: .75rem 1.5rem;
+      margin-top: 1rem; font-family: 'Special Elite', monospace; font-size: .8rem;
+    }
+    .chart-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+    .chart-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+    .data-table th, .data-table td { padding: .5rem .6rem; border-bottom: 1px solid var(--gold-dark); text-align: left; }
+    .data-table th { font-family: 'Special Elite', monospace; text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; color: var(--ink-light); border-bottom: 2px solid var(--gold); }
+    .data-table tr:hover { background: rgba(201,168,76,.08); }
+    .loading { font-family: 'Special Elite', monospace; color: var(--ink-light); text-align: center; padding: 2rem; }
+  </style>
 </head>
 <body>
 <header class="site-header">
   <a class="harbour-link" href="https://harbour-architecture.github.io/root/">Open Science Harbour</a>
-  &middot;
-  <span style="font-family:'Special Elite',monospace;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-light)">Coastline + Breakwater</span>
+  <span style="font-family:'Special Elite',monospace;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-light)"> &middot; Coastline + Breakwater</span>
   <h1 class="site-title">Generator Layers</h1>
   <p class="site-subtitle">Trans-Generational Creative Traditions &mdash; A Field Dossier</p>
 </header>
@@ -27,239 +49,233 @@
   <h1>Results &amp; Error Budget</h1>
 
   <div class="endorsement-box">
-    <p>This page synthesises answers to the two guiding questions. Results derive from the protocol defined in <a href="architecture.html">Architecture</a> and the site assessments compiled in the <a href="ledger.html">Ledger</a>. Error budget entries are ranked by contribution to total uncertainty. <strong>Status:</strong> Preliminary synthesis; main results to be identified in next working session.</p>
+    <p>This page synthesises answers to the two guiding questions. Data rendered live from <code>sites.json</code> and <code>config.json</code>. Protocol: <a href="architecture.html">Architecture</a>. Site assessments: <a href="ledger.html">Ledger</a>.</p>
   </div>
 
-  <!-- ============================================================ -->
+  <h2>Depth Timeline</h2>
+  <div class="chart-container">
+    <canvas id="depthChart"></canvas>
+    <div class="chart-legend" id="chartLegend"></div>
+  </div>
+
   <h2>Q1 &mdash; How Deep Is the Chain?</h2>
-
   <div class="summary-box">
-    <p><strong>Answer:</strong> From the conventional anchor at 52,500&nbsp;ya, approximately <strong>N&nbsp;&asymp;&nbsp;1,750&ndash;2,100 parent layers</strong> separate us from the earliest securely dated figurative art tradition. From the deepest ornamental evidence (Bizmoune, ~142,000&nbsp;ya), the chain extends to <strong>N&nbsp;&asymp;&nbsp;4,730&ndash;5,680</strong>.</p>
+    <p><strong>Answer:</strong> From the conventional anchor at 52,500&nbsp;ya, approximately <strong>N&nbsp;&asymp;&nbsp;1,750&ndash;2,100 parent layers</strong>. From the deepest ornamental evidence (Bizmoune, ~142,000&nbsp;ya), <strong>N&nbsp;&asymp;&nbsp;4,730&ndash;5,680</strong>.</p>
   </div>
-
   <h3>Anchor Points</h3>
-  <table>
-    <thead>
-      <tr><th>Anchor</th><th>Date (ya)</th><th>N (g=25)</th><th>N (g=26.9)</th><th>N (g=30)</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Bizmoune beads</td><td>~142,000</td><td>5,680</td><td>5,279</td><td>4,733</td></tr>
-      <tr><td>Blombos ochre</td><td>~100,000</td><td>4,000</td><td>3,717</td><td>3,333</td></tr>
-      <tr><td>Muna hand stencil</td><td>&ge;67,800</td><td>2,712</td><td>2,520</td><td>2,260</td></tr>
-      <tr><td>Madjedbebe axes</td><td>&ge;65,000</td><td>2,600</td><td>2,416</td><td>2,167</td></tr>
-      <tr><td>Conventional anchor</td><td>52,500</td><td>2,100</td><td>1,951</td><td>1,750</td></tr>
-      <tr><td>Leang Karampuang</td><td>&ge;51,200</td><td>2,048</td><td>1,903</td><td>1,707</td></tr>
-      <tr><td>Swabian Jura</td><td>~43,000</td><td>1,720</td><td>1,599</td><td>1,433</td></tr>
-      <tr><td>Sahul ground-edge axes</td><td>&ge;35,400</td><td>1,416</td><td>1,316</td><td>1,180</td></tr>
-      <tr><td>Nawarla pictographs</td><td>~28,000</td><td>1,120</td><td>1,041</td><td>933</td></tr>
-      <tr><td>Kimberley kangaroo</td><td>~17,300</td><td>692</td><td>643</td><td>577</td></tr>
-      <tr><td>Huenul 1 comb motif</td><td>~8,200</td><td>328</td><td>305</td><td>273</td></tr>
-    </tbody>
-  </table>
+  <div id="anchorTable" class="loading">Loading data&hellip;</div>
 
-  <!-- ============================================================ -->
   <h2>Q2 &mdash; Which Traditions Cross the Threshold?</h2>
-
   <div class="summary-box">
-    <p><strong>Answer:</strong> All assessed traditions with securely dated material evidence exceed <em>N</em>&nbsp;&gt;&nbsp;40 by large margins. The threshold discriminates tradition from fashion but does not create close calls in the current compilation. The real discriminant is not <em>whether</em> traditions cross the threshold, but <em>at which levels</em> (Material, Practice, Semantic) and through <em>which channels</em> (Strat, Cust) they can be confirmed.</p>
+    <p><strong>Answer:</strong> All assessed traditions with securely dated material evidence exceed <em>N</em>&nbsp;&gt;&nbsp;40 by large margins. The real discriminant is <em>at which levels</em> and through <em>which channels</em> they can be confirmed.</p>
   </div>
-
   <h3>Threshold-Crossing Summary</h3>
-  <table>
-    <thead>
-      <tr><th>Tradition</th><th>N (g=26.9)</th><th>Material</th><th>Practice</th><th>Semantic</th><th>Channels</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Bizmoune beads</td><td>~5,279</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-probable">PROBABLE</span></td>
-        <td><span class="score-underdetermined">UNDET.</span></td>
-        <td>Strat only</td>
-      </tr>
-      <tr>
-        <td>Blombos assemblage</td><td>~3,717</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-underdetermined">UNDET.</span></td>
-        <td>Strat only</td>
-      </tr>
-      <tr>
-        <td>Sulawesi art (Karampuang)</td><td>~1,903</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-probable">PROBABLE</span></td>
-        <td><span class="score-underdetermined">UNDET.</span></td>
-        <td>Strat only</td>
-      </tr>
-      <tr>
-        <td>Sahul ground-edge axes</td><td>~1,316</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-probable">PROBABLE</span></td>
-        <td>Strat + Cust</td>
-      </tr>
-      <tr>
-        <td>Nawarla Gabarnmang</td><td>~1,041</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td>Strat + Cust</td>
-      </tr>
-      <tr>
-        <td>Kimberley sequence</td><td>~643</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-probable">PROBABLE</span></td>
-        <td>Strat + Cust</td>
-      </tr>
-      <tr>
-        <td>Swabian Jura figurines</td><td>~1,599</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-probable">PROBABLE</span></td>
-        <td><span class="score-ruptured">RUPTURED</span></td>
-        <td>Strat only</td>
-      </tr>
-      <tr>
-        <td>El Castillo stencils</td><td>~1,517</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-underdetermined">UNDET.</span></td>
-        <td><span class="score-ruptured">RUPTURED</span></td>
-        <td>Strat only</td>
-      </tr>
-      <tr>
-        <td>Huenul 1 comb motif</td><td>~305</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-probable">PROBABLE</span></td>
-        <td><span class="score-underdetermined">UNDET.</span></td>
-        <td>Strat only</td>
-      </tr>
-      <tr>
-        <td>Jiahu bone flutes</td><td>~316</td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-confirmed">CONFIRMED</span></td>
-        <td><span class="score-underdetermined">UNDET.</span></td>
-        <td>Strat only</td>
-      </tr>
-      <tr>
-        <td>Divje Babe bone</td><td>~2,007</td>
-        <td><span class="score-underdetermined">UNDET.</span></td>
-        <td>&mdash;</td>
-        <td>&mdash;</td>
-        <td>Strat only (contested)</td>
-      </tr>
-    </tbody>
-  </table>
+  <div id="thresholdTable" class="loading">Loading data&hellip;</div>
 
-  <!-- ============================================================ -->
   <h2>Key Finding: Australian Convergence</h2>
-
-  <p>The Australian corridor (Madjedbebe &rarr; Murujuga &rarr; Nawarla Gabarnmang &rarr; Kimberley) is unique in the global compilation for three convergent reasons:</p>
-
+  <p>The Australian corridor (Madjedbebe &rarr; Murujuga &rarr; Nawarla Gabarnmang &rarr; Kimberley) is unique for three convergent reasons:</p>
   <ol>
-    <li><strong>Depth:</strong> Material evidence spans &ge;65,000&nbsp;years (~2,416&nbsp;layers), the deepest continuous occupation sequence outside Africa.</li>
-    <li><strong>Dual-channel confirmation:</strong> Stratigraphic <em>and</em> custodial evidence converge independently, with Nawarla Gabarnmang achieving CONFIRMED at all three levels through both channels.</li>
-    <li><strong>Living custodianship:</strong> Aboriginal communities maintain active connection to these sites &mdash; not as heritage objects but as ongoing cultural practice with internal accountability structures.</li>
+    <li><strong>Depth:</strong> Material evidence spans &ge;65,000&nbsp;years (~2,416&nbsp;layers).</li>
+    <li><strong>Dual-channel confirmation:</strong> Stratigraphic <em>and</em> custodial evidence converge independently.</li>
+    <li><strong>Living custodianship:</strong> Aboriginal communities maintain active connection as ongoing practice.</li>
   </ol>
-
   <div class="guardian-flag">
-    <p><strong>Candidate comparative claim (not yet formalised):</strong> Aboriginal Australian landscape-anchored creative traditions represent the longest documented continuous creative transmission chains. This claim requires a full Ledger entry (CL-2026-XXX) with explicit competitors and discriminant conditions before it can be promoted from finding-in-waiting to formal result.</p>
+    <p><strong>Candidate comparative claim (not yet formalised):</strong> Aboriginal Australian landscape-anchored creative traditions represent the longest documented continuous creative transmission chains. Requires formal Ledger entry CL-2026-XXX with competitors and discriminant conditions.</p>
   </div>
 
-  <!-- ============================================================ -->
   <h2>Error Budget</h2>
-
-  <p>The following table ranks uncertainty sources by their contribution to overall assessment confidence. Sources are ordered from largest to smallest impact.</p>
-
   <table class="error-budget">
-    <thead>
-      <tr><th>Source</th><th>Magnitude</th><th>Affects</th><th>Mitigation</th></tr>
-    </thead>
+    <thead><tr><th>Source</th><th>Magnitude</th><th>Affects</th><th>Mitigation</th></tr></thead>
     <tbody>
-      <tr>
-        <td>EB-1 &middot; g variance</td>
-        <td>&plusmn;17% on N</td>
-        <td>All layer-depth calculations</td>
-        <td>Sensitivity band (g=25&ndash;30) applied to all entries. No threshold-crossings in current compilation are sensitive to this range. Sex-specific g noted for lineage-specific chains.</td>
-      </tr>
-      <tr>
-        <td>EB-2 &middot; Epistemic asymmetry</td>
-        <td>Binary (present/absent)</td>
-        <td>All non-Australian sites</td>
-        <td>Dual-channel protocol. Where custodial evidence is absent, scored &ldquo;&mdash;&rdquo;. Where present, convergence with stratigraphic evidence raises confidence. Custodial Null defined for explicit disavowal vs. simple absence.</td>
-      </tr>
-      <tr>
-        <td>EB-3 &middot; Cascade rule</td>
-        <td>Systematic downgrade</td>
-        <td>All Semantic scores without Practice anchor</td>
-        <td>Explicitly epistemic, not ontological. Prevents over-claiming at Level 3. Leang Karampuang Semantic downgraded to UNDERDETERMINED in v0.3 under this rule.</td>
-      </tr>
-      <tr>
-        <td>EB-4 &middot; Dating uncertainty</td>
-        <td>Site-specific (typically &plusmn;5&ndash;20%)</td>
-        <td>Individual N-values</td>
-        <td>Minimum-age constraints (&ge;) used where applicable. Dating Revision Protocol ensures classification stability. Worked Sulawesi example demonstrates resilience.</td>
-      </tr>
-      <tr>
-        <td>EB-5 &middot; Pedigree collapse</td>
-        <td>Systematic (depth &ne; breadth)</td>
-        <td>Interpretation of N</td>
-        <td>N is a depth metric, not a count of distinct ancestors. Strengthened with palaeogenomic turnover evidence (Bergstr&ouml;m et al., Lazaridis et al.).</td>
-      </tr>
-      <tr>
-        <td>EB-6 &middot; Neanderthal boundary</td>
-        <td>Binary (species scope)</td>
-        <td>El Castillo, Divje Babe</td>
-        <td>Treated separately. If Neanderthal authorship confirmed, &ldquo;humankind&rdquo; scope must be redefined. Deferred to separate deliberation (Guardian flag #5).</td>
-      </tr>
-      <tr>
-        <td>EB-7 &middot; Convergence vs. diffusion</td>
-        <td>Classificatory</td>
-        <td>Cross-continental comparisons</td>
-        <td>PROBABLE-[Convergent] annotation distinguishes independent invention from transmission-based continuity. Sulawesi shows no plausible diffusion route from Africa.</td>
-      </tr>
-      <tr>
-        <td>EB-8 &middot; UNDERDETERMINED feasibility</td>
-        <td>Variable (LOW to HIGH)</td>
-        <td>Resolution of open entries</td>
-        <td>Every UNDERDETERMINED entry carries a Discriminant Condition and Feasibility Flag. Many deep-time entries have LOW feasibility (no living tradition, no ethnographic parallels).</td>
-      </tr>
-      <tr>
-        <td>EB-9 &middot; Stratigraphic gaps</td>
-        <td>Site-specific</td>
-        <td>Continuity claims at individual sites</td>
-        <td>Nawarla: 28 ka pictograph to post-1440 CE art &mdash; connection partly inferential, bridged by custodial evidence. Sulawesi: probable discontinuity ~20,000&ndash;4,000 ya (LGM to Austronesian arrival).</td>
-      </tr>
-      <tr>
-        <td>EB-10 &middot; Anchor convention</td>
-        <td>Systematic offset</td>
-        <td>Absolute N-values (not relative comparisons)</td>
-        <td>52,500 ya is declared convention with Endorsement Marker. Substitution invited. Does not affect inter-site comparisons or threshold-crossing judgments.</td>
-      </tr>
+      <tr><td>EB-1 &middot; g variance</td><td>&plusmn;17% on N</td><td>All layer-depth calculations</td><td>Sensitivity band (g=25&ndash;30). No threshold-crossings sensitive.</td></tr>
+      <tr><td>EB-2 &middot; Epistemic asymmetry</td><td>Binary</td><td>All non-Australian sites</td><td>Dual-channel protocol. Custodial Null defined.</td></tr>
+      <tr><td>EB-3 &middot; Cascade rule</td><td>Systematic downgrade</td><td>Semantic without Practice anchor</td><td>Epistemic, not ontological. Karampuang downgraded v0.3.</td></tr>
+      <tr><td>EB-4 &middot; Dating uncertainty</td><td>&plusmn;5&ndash;20%</td><td>Individual N-values</td><td>Minimum-age constraints. Dating Revision Protocol.</td></tr>
+      <tr><td>EB-5 &middot; Pedigree collapse</td><td>Systematic</td><td>Interpretation of N</td><td>N is depth, not breadth. Palaeogenomic evidence cited.</td></tr>
+      <tr><td>EB-6 &middot; Neanderthal boundary</td><td>Binary</td><td>El Castillo, Divje Babe</td><td>Deferred deliberation (GF-5).</td></tr>
+      <tr><td>EB-7 &middot; Convergence vs. diffusion</td><td>Classificatory</td><td>Cross-continental comparisons</td><td>PROBABLE-[Convergent] annotation.</td></tr>
+      <tr><td>EB-8 &middot; UNDET. feasibility</td><td>Variable</td><td>Open entries</td><td>Discriminant Condition + Feasibility Flag.</td></tr>
+      <tr><td>EB-9 &middot; Stratigraphic gaps</td><td>Site-specific</td><td>Continuity claims</td><td>Nawarla gap bridged by custodial. Sulawesi LGM flagged.</td></tr>
+      <tr><td>EB-10 &middot; Anchor convention</td><td>Systematic offset</td><td>Absolute N-values</td><td>52,500 ya declared; substitution invited.</td></tr>
     </tbody>
   </table>
-
   <div class="field-note">
-    <p><strong>Error-budget hierarchy:</strong> EB-1 (g&nbsp;variance) and EB-2 (epistemic asymmetry) dominate. EB-1 is a parametric uncertainty that shifts all N-values proportionally but does not affect threshold-crossings. EB-2 is a structural limitation: without custodial evidence, Semantic scores for non-Australian sites are systematically capped at UNDERDETERMINED or PROBABLE. Together, these two sources account for most of the unresolved uncertainty in the compilation.</p>
+    <p><strong>Hierarchy:</strong> EB-1 and EB-2 dominate. EB-1 shifts all N-values proportionally but does not affect threshold-crossings. EB-2 systematically caps non-Australian Semantic scores.</p>
   </div>
 
-  <!-- ============================================================ -->
   <h2>What Remains Open</h2>
-
-  <p>The following items are required before results can be promoted from preliminary synthesis to stable findings:</p>
-
   <ol>
-    <li><strong>Formal Ledger entry CL-2026-XXX</strong> for the Australian landscape-anchored continuity claim, with explicit competitors (Blombos? Sulawesi?), discriminant conditions, and 3-value classification.</li>
-    <li><strong>Stress-test of N&nbsp;&gt;&nbsp;40 threshold</strong> with counterexamples: Polynesian genealogies, Aboriginal songlines, European cathedral-building traditions.</li>
-    <li><strong>Expanded site list:</strong> Mezin bones, Marsoulas conch, Lascaux, Cosquer, &Ccedil;atalh&ouml;y&uuml;k, Ubirr, songlines as scored entries.</li>
-    <li><strong>Neanderthal scope deliberation</strong> (Guardian flag #5).</li>
-    <li><strong>Semantic drift case studies</strong> to refine cascade-rule edge qualification.</li>
+    <li>Formal Ledger entry CL-2026-XXX for Australian continuity claim.</li>
+    <li>Stress-test of N&nbsp;&gt;&nbsp;40 with counterexamples.</li>
+    <li>Expanded site list (Mezin, Marsoulas, Lascaux, Cosquer, Ubirr, songlines).</li>
+    <li>Neanderthal scope deliberation (GF-5).</li>
+    <li>Semantic drift case studies for cascade-rule edge qualification.</li>
   </ol>
-
-  <div class="compass">&#x2690; &bull; &#x2691; &bull; &#x2726;</div>
+  <div class="compass">&diams; &middot; &diams; &middot; &diams;</div>
 </main>
 <footer>
   Dossier v0.3 &middot; Council-5 ADM-EC &middot; Guardian stance with Architect, Scout, Cartographer, Verifier inputs.<br>
   <a href="https://harbour-architecture.github.io/root/">Open Science Harbour</a> &middot; Coastline + Breakwater
 </footer>
+<script>
+(async function() {
+  const [sitesData, configData] = await Promise.all([
+    fetch('sites.json').then(function(r){return r.json();}),
+    fetch('config.json').then(function(r){return r.json();})
+  ]);
+  var sites = sitesData.sites;
+  var cfg = configData.parameters;
+
+  /* Colour logic: highest confirmed level */
+  function highestLevel(s) {
+    var rank = {CONFIRMED:4,PROBABLE:3,UNDERDETERMINED:2,RUPTURED:1,NULL:0};
+    function best(lvl){return Math.max(rank[lvl.strat]||0,rank[lvl.cust]||0);}
+    var sem=best(s.scores.semantic),prac=best(s.scores.practice),mat=best(s.scores.material);
+    if(sem>=4)return'CONFIRMED-SEM';if(sem>=3)return'PROBABLE-SEM';
+    if(prac>=4)return'CONFIRMED-PRAC';if(prac>=3)return'PROBABLE-PRAC';
+    if(mat>=4)return'CONFIRMED-MAT';if(mat>=2)return'UNDERDETERMINED';
+    return'RUPTURED';
+  }
+  var palette = {
+    'CONFIRMED-SEM':  {bg:'#2d5016',border:'#1a3008',label:'Semantic Confirmed'},
+    'PROBABLE-SEM':   {bg:'#4a7a28',border:'#2d5016',label:'Semantic Probable'},
+    'CONFIRMED-PRAC': {bg:'#8b6914',border:'#6b4f0e',label:'Practice Confirmed'},
+    'PROBABLE-PRAC':  {bg:'#c9a84c',border:'#8b6914',label:'Practice Probable'},
+    'CONFIRMED-MAT':  {bg:'#a0522d',border:'#7a3e22',label:'Material Confirmed'},
+    'UNDERDETERMINED':{bg:'#b8860b',border:'#8b6508',label:'Underdetermined'},
+    'RUPTURED':       {bg:'#8b2500',border:'#5c1900',label:'Ruptured / Contested'}
+  };
+
+  /* Filter out fully-null entries */
+  var chartSites = sites.filter(function(s){return s.scores.material.strat!=='NULL';});
+  var labels=chartSites.map(function(s){return s.id+' '+s.name;});
+  var nValues=chartSites.map(function(s){return s.N.g269;});
+  var colours=chartSites.map(function(s){return palette[highestLevel(s)].bg;});
+  var borders=chartSites.map(function(s){return palette[highestLevel(s)].border;});
+  var hasCust=chartSites.map(function(s){return s.scores.material.cust!=='NULL';});
+
+  /* Sort by N descending */
+  var indices=nValues.map(function(v,i){return i;}).sort(function(a,b){return nValues[b]-nValues[a];});
+  var sL=indices.map(function(i){return labels[i];});
+  var sN=indices.map(function(i){return nValues[i];});
+  var sC=indices.map(function(i){return colours[i];});
+  var sB=indices.map(function(i){return borders[i];});
+  var sD=indices.map(function(i){return hasCust[i];});
+
+  /* === CHART === */
+  var ctx=document.getElementById('depthChart').getContext('2d');
+  new Chart(ctx,{
+    type:'bar',
+    data:{labels:sL,datasets:[{label:'Parent Layers (N, g=26.9)',data:sN,backgroundColor:sC,borderColor:sB,borderWidth:2,borderRadius:3}]},
+    options:{
+      indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'#2c1810',
+          titleFont:{family:"'Cinzel',serif",size:13},
+          bodyFont:{family:"'Crimson Text',serif",size:12},
+          callbacks:{
+            afterLabel:function(tip){
+              var idx=indices[tip.dataIndex];var site=chartSites[idx];
+              var dual=site.scores.material.cust!=='NULL'?'Strat + Cust':'Strat only';
+              return'Date: '+site.date_label+'\n'+dual;
+            }
+          }
+        }
+      },
+      scales:{
+        x:{
+          type:'logarithmic',
+          title:{display:true,text:'Parent Layers (N) \u2014 log scale',font:{family:"'Special Elite',monospace",size:13},color:'#4a3728'},
+          grid:{color:'rgba(201,168,76,.2)'},
+          ticks:{color:'#4a3728',font:{family:"'Special Elite',monospace",size:11},callback:function(v){return v>=1000?(v/1000)+'k':v;}}
+        },
+        y:{
+          ticks:{color:'#2c1810',font:{family:"'Cinzel',serif",size:11}},
+          grid:{display:false}
+        }
+      }
+    },
+    plugins:[{
+      id:'thresholdLine',
+      afterDraw:function(chart){
+        var xAxis=chart.scales.x,yAxis=chart.scales.y;
+        var xPx=xAxis.getPixelForValue(cfg.threshold_N);
+        if(xPx>=xAxis.left&&xPx<=xAxis.right){
+          var c=chart.ctx;c.save();
+          c.beginPath();c.setLineDash([6,4]);c.strokeStyle='#8b2500';c.lineWidth=2;
+          c.moveTo(xPx,yAxis.top);c.lineTo(xPx,yAxis.bottom);c.stroke();
+          c.setLineDash([]);c.font="italic 11px 'Special Elite',monospace";
+          c.fillStyle='#8b2500';c.textAlign='left';
+          c.fillText('N = 40 threshold',xPx+4,yAxis.top+14);
+          c.restore();
+        }
+      }
+    },{
+      id:'custodialMarker',
+      afterDraw:function(chart){
+        var meta=chart.getDatasetMeta(0),c=chart.ctx;c.save();
+        c.font="bold 10px 'Special Elite',monospace";c.fillStyle='#c9a84c';c.textAlign='left';
+        meta.data.forEach(function(bar,i){
+          if(sD[i]){c.fillText('\u2726',bar.x+6,bar.y+4);}
+        });
+        c.restore();
+      }
+    }]
+  });
+
+  /* Legend */
+  var legendEl=document.getElementById('chartLegend');
+  var seen={};
+  indices.forEach(function(i){
+    var lvl=highestLevel(chartSites[i]);
+    if(!seen[lvl]){seen[lvl]=true;
+      var sp=document.createElement('span');
+      sp.innerHTML='<i style="background:'+palette[lvl].bg+'"></i> '+palette[lvl].label;
+      legendEl.appendChild(sp);
+    }
+  });
+  var cs=document.createElement('span');
+  cs.innerHTML='<i style="background:var(--gold)"></i> \u2726 Dual-channel (Strat+Cust)';
+  legendEl.appendChild(cs);
+
+  /* Anchor Table */
+  var sorted=[].concat(chartSites).sort(function(a,b){return b.date_ya-a.date_ya;});
+  var ah='<table class="data-table"><thead><tr><th>Site</th><th>Date</th><th>N (g=25)</th><th>N (g=26.9)</th><th>N (g=30)</th></tr></thead><tbody>';
+  sorted.forEach(function(s){
+    ah+='<tr><td><strong>'+s.id+'</strong> '+s.name+'</td><td>'+s.date_label+'</td>';
+    ah+='<td>'+s.N.g25.toLocaleString()+'</td>';
+    ah+='<td><strong>'+s.N.g269.toLocaleString()+'</strong></td>';
+    ah+='<td>'+s.N.g30.toLocaleString()+'</td></tr>';
+  });
+  ah+='</tbody></table>';
+  document.getElementById('anchorTable').innerHTML=ah;
+
+  /* Threshold Table */
+  function badge(val){
+    if(!val||val==='NULL')return'<span style="color:#999">\u2014</span>';
+    var m={CONFIRMED:'score-confirmed',PROBABLE:'score-probable',UNDERDETERMINED:'score-underdetermined',RUPTURED:'score-ruptured'};
+    var sh={CONFIRMED:'CONF.',PROBABLE:'PROB.',UNDERDETERMINED:'UNDET.',RUPTURED:'RUPT.'};
+    return'<span class="'+(m[val]||'')+'">'+(sh[val]||val)+'</span>';
+  }
+  function bestOf(lvl){
+    var r={CONFIRMED:4,PROBABLE:3,UNDERDETERMINED:2,RUPTURED:1,NULL:0};
+    return(r[lvl.strat]||0)>=(r[lvl.cust]||0)?lvl.strat:lvl.cust;
+  }
+  var th='<table class="data-table"><thead><tr><th>Tradition</th><th>N</th><th>Material</th><th>Practice</th><th>Semantic</th><th>Channels</th></tr></thead><tbody>';
+  sorted.forEach(function(s){
+    var ch=s.scores.material.cust!=='NULL'?'Strat + Cust':'Strat only';
+    th+='<tr><td><strong>'+s.id+'</strong> '+s.name+'</td>';
+    th+='<td>'+s.N.g269.toLocaleString()+'</td>';
+    th+='<td>'+badge(bestOf(s.scores.material))+'</td>';
+    th+='<td>'+badge(bestOf(s.scores.practice))+'</td>';
+    th+='<td>'+badge(bestOf(s.scores.semantic))+'</td>';
+    th+='<td><em>'+ch+'</em></td></tr>';
+  });
+  th+='</tbody></table>';
+  document.getElementById('thresholdTable').innerHTML=th;
+})();
+</script>
 </body>
 </html>

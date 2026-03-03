@@ -1,0 +1,30 @@
+{
+  "framework": {
+    "version": "0.3",
+    "date": "2026-03-03",
+    "harbour_layer": ["Coastline", "Breakwater"],
+    "stances": ["Guardian", "Architect", "Scout", "Cartographer", "Verifier"],
+    "intake_mode": "SWEEP",
+    "constraint_selection": "CANONICAL"
+  },
+  "parameters": {
+    "g_mean": 26.9,
+    "g_paternal": 30.7,
+    "g_maternal": 23.2,
+    "g_sensitivity_low": 25,
+    "g_sensitivity_high": 30,
+    "g_source": "[1] Wang et al. (2023), Science Advances 9(1), eabm7047",
+    "threshold_N": 40,
+    "threshold_years_approx": 1000,
+    "anchor_ya": 52500,
+    "anchor_label": "Conventional anchor (earliest securely dated figurative art)"
+  },
+  "classifications": [
+    { "id": "CONFIRMED", "label": "Confirmed", "css": "score-confirmed", "colour": "#2d5016" },
+    { "id": "PROBABLE", "label": "Probable", "css": "score-probable", "colour": "#8b6914" },
+    { "id": "UNDERDETERMINED", "label": "Underdetermined", "css": "score-underdetermined", "colour": "#a0522d" },
+    { "id": "RUPTURED", "label": "Ruptured", "css": "score-ruptured", "colour": "#8b2500" },
+    { "id": "FORCIBLY_INTERRUPTED", "label": "Forcibly Interrupted", "css": "score-ruptured", "colour": "#8b2500" },
+    { "id": "NULL", "label": "\u2014", "css": "", "colour": "#999999" }
+  ]
+}
