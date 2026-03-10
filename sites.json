@@ -291,6 +291,31 @@
         "condition": "Independent replication showing hole pattern cannot/can be produced by cave hyena gnawing.",
         "feasibility": "MODERATE"
       }
+    },
+    {
+      "id": "C7",
+      "name": "Maya Maize Ritual Complex",
+      "region": "Mesoamerica (Guatemala, Belize, southern Mexico)",
+      "section": "C",
+      "section_label": "Eurasia, Island SE Asia, Americas",
+      "tradition": "Maize-centred ceremonial cycle (cultivation ritual, creation narrative, Maize God iconography)",
+      "date_ya": 4000,
+      "date_label": "~4,000 ya (composite; see sketch)",
+      "date_qualifier": "conservative; deeper roots to ~9,000 ya",
+      "N": { "g25": 160, "g269": 149, "g30": 133 },
+      "sources": ["[110] Kennett et al. (2020)", "[111] Piperno et al. (2009)", "[112] Hansen (2009)", "[113] Tedlock (1996)", "[114] Santini et al. (2022)", "[115] Taube (1985)"],
+      "scores": {
+        "material":  { "strat": "CONFIRMED",      "cust": "UNDERDETERMINED" },
+        "practice":  { "strat": "CONFIRMED",      "cust": "PROBABLE", "annotation": "No formal verification mechanism documented" },
+        "semantic":  { "strat": "PROBABLE",        "cust": "UNDERDETERMINED", "annotation": "Custodially attenuated" }
+      },
+      "notes": "First Mesoamerican entry. Composite tradition bundling crop history, ceremonial cycle, and semantic-mythic tradition (Popol Vuh). El Mirador stucco panels (~300 BCE) depict Maize God and Hero Twin narratives matching Popol Vuh (transcribed ~1550 from oral tradition). Living practice persists among modern K\u2019iche\u2019 communities. Proposes new disruption category: CUSTODIALLY ATTENUATED \u2014 tradition persists, verification infrastructure degraded by colonial disruption. Prompted by external feedback (stabilisation condition #4). Intake: REQUEST.",
+      "discriminant": {
+        "level": "semantic",
+        "condition": "Identification of a pre-contact Maya custodial accountability mechanism (cross-community narrative verification, sanctions for misstatement, or institutional succession of interpretive authority) surviving in documentable form.",
+        "feasibility": "MODERATE"
+      },
+      "sketch_url": "sketch-c7.html"
     }
   ],
   "categories": [

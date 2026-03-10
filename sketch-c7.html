@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preliminary Sketch: C7 Maya Maize Ritual &mdash; Generator Layers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Status banner ── */
+    .sketch-banner {
+      background: rgba(160,82,45,.12);
+      border: 2px dashed var(--burnt-sienna, #a0522d);
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      font-family: 'Special Elite', monospace;
+      font-size: .85rem;
+    }
+
+    /* ── Score grid ── */
+    .score-grid { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .9rem; }
+    .score-grid th, .score-grid td { border: 1px solid var(--gold, #c9a84c); padding: .4rem .6rem; text-align: center; }
+    .score-grid th { background: rgba(201,168,76,.15); font-family: 'Special Elite', monospace; font-size: .8rem; }
+    .badge-conf { background: #2d5016; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: .75rem; }
+    .badge-prob { background: #8b6914; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: .75rem; }
+    .badge-undet { background: #a0522d; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: .75rem; }
+
+    /* ── Three-tier visual distinction system ── */
+
+    /* OBSERVATION: confirmed factual claims grounded in cited evidence */
+    .box-observation {
+      border: 1px solid var(--gold, #c9a84c);
+      border-left: 4px solid #2d5016;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      background: rgba(45,80,22,.04);
+    }
+    .box-observation::before {
+      content: "OBSERVATION";
+      display: block;
+      font-family: 'Special Elite', monospace;
+      font-size: .7rem;
+      letter-spacing: .15em;
+      color: #2d5016;
+      margin-bottom: .4rem;
+    }
+
+    /* INFERENCE: interpretive claims that go beyond direct evidence */
+    .box-inference {
+      border: 1px solid var(--gold, #c9a84c);
+      border-left: 4px solid #8b6914;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      background: rgba(139,105,20,.04);
+    }
+    .box-inference::before {
+      content: "INFERENCE";
+      display: block;
+      font-family: 'Special Elite', monospace;
+      font-size: .7rem;
+      letter-spacing: .15em;
+      color: #8b6914;
+      margin-bottom: .4rem;
+    }
+
+    /* PROPOSAL: framework extensions or new categories requiring deliberation */
+    .box-proposal {
+      border: 2px solid var(--burnt-sienna, #a0522d);
+      border-left: 4px solid #a0522d;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      background: rgba(160,82,45,.06);
+    }
+    .box-proposal::before {
+      content: "FRAMEWORK PROPOSAL";
+      display: block;
+      font-family: 'Special Elite', monospace;
+      font-size: .7rem;
+      letter-spacing: .15em;
+      color: #a0522d;
+      margin-bottom: .4rem;
+    }
+
+    /* ── Supporting elements ── */
+    .timeline-box {
+      border: 1px solid var(--gold, #c9a84c);
+      padding: 1rem;
+      margin: 1rem 0;
+      font-size: .88rem;
+    }
+    .timeline-box dt { font-weight: bold; margin-top: .5rem; }
+    .timeline-box dd { margin-left: 1.5rem; margin-bottom: .3rem; }
+    .composite-note {
+      font-size: .85rem;
+      border: 1px dashed var(--gold, #c9a84c);
+      padding: .8rem 1rem;
+      margin: 1rem 0;
+      background: rgba(201,168,76,.06);
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a class="harbour-link" href="https://harbour-architecture.github.io/root/">Open Science Harbour</a>
+  <span style="font-family:'Special Elite',monospace;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-light)"> &middot; Breakwater</span>
+  <h1 class="site-title">Generator Layers</h1>
+  <p class="site-subtitle">Trans-Generational Creative Traditions &mdash; A Field Dossier</p>
+</header>
+<nav>
+  <a href="index.html">Overview</a>
+  <a href="background.html">Background</a>
+  <a href="architecture.html">Architecture</a>
+  <a href="results.html">Results</a>
+  <a href="ledger.html">Ledger</a>
+  <a href="falsification.html">Falsification</a>
+  <a href="references.html">References</a>
+  <a href="outreach.html">Essay</a>
+</nav>
+<main>
+
+  <h1>Preliminary Sketch: C7 &middot; Maya Maize Ritual Complex</h1>
+
+  <div class="sketch-banner">
+    <strong>STATUS: PRELIMINARY SKETCH</strong> &mdash; Not a scored Ledger entry.
+    This sketch was prompted by external feedback identifying the Maya maize ritual
+    as a stress-test case for the custodial channel. It requires domain-expert review
+    before formal Ledger promotion. Origin: first external application of the protocol
+    (stabilisation condition #4).
+  </div>
+
+  <!-- ── Entry Header with Breakwater metadata ── -->
+  <h2>Entry Header</h2>
+
+  <dl>
+    <dt>ID</dt>                   <dd>C7 (Eurasia &amp; Americas)</dd>
+    <dt>Name</dt>                 <dd>Maya Maize Ritual Complex</dd>
+    <dt>Region</dt>               <dd>Mesoamerica (Guatemala, Belize, southern Mexico)</dd>
+    <dt>Tradition</dt>            <dd>Maize-centred ceremonial cycle (cultivation ritual, creation narrative, Maize God iconography)</dd>
+    <dt>Date</dt>                 <dd>~4,000 ya (maize as staple grain in Maya area; conservative ritual anchor)</dd>
+    <dt>Date qualifier</dt>       <dd>Conservative. Deeper roots: maize domesticated ~9,000 ya in Balsas River Valley, Mexico. Ceremonial deposits at Ceibal from ~2,700 ya. El Mirador stucco panels depicting Popol Vuh narratives ~2,325 ya. See <em>Multi-Anchor Problem</em> below.</dd>
+    <dt>Endorsement Marker</dt>   <dd>Breakwater &middot; Preliminary sketch &middot; Not endorsed as scored entry</dd>
+    <dt>Intake Mode</dt>          <dd>REQUEST (prompted by external feedback; not a routine SWEEP)</dd>
+    <dt>Constraint Selection</dt> <dd>CANONICAL (Wang <em>et al.</em> 2023 generation interval; standard sensitivity band 25&ndash;30 yr)</dd>
+  </dl>
+
+  <div class="composite-note">
+    <strong>Composite tradition warning.</strong> This entry currently bundles at least three
+    potentially distinct transmission chains: (a) the crop history and cultivation practice,
+    (b) the planting-harvest ceremonial cycle, and (c) the semantic-mythic tradition (Maize God,
+    Popol Vuh creation narrative). Each may have a different temporal depth, transmission topology,
+    and survival profile. For a sketch, this bundling is acceptable. For a formal Ledger entry,
+    decomposition into sub-entries (C7a, C7b, C7c) is likely required, with independent scoring
+    for each. The depth calculation below applies to the composite; individual components may
+    anchor differently.
+  </div>
+
+  <!-- ── Depth Calculation ── -->
+  <h2>Depth Calculation</h2>
+
+  <div class="timeline-box">
+    <p>Primary anchor: ~4,000 ya (onset of maize as keystone crop and Maya civilisational emergence).</p>
+    <dl>
+      <dt>N at <em>g</em> = 25</dt>   <dd>160 parent layers</dd>
+      <dt>N at <em>g</em> = 26.9</dt>  <dd>149 parent layers</dd>
+      <dt>N at <em>g</em> = 30</dt>    <dd>133 parent layers</dd>
+    </dl>
+    <p>All values exceed N &gt; 40 by a factor of &gt;3. Threshold crossing is not in question for any anchor choice. The discriminant lies in <em>level</em> and <em>channel</em>, not depth.</p>
+  </div>
+
+  <div class="box-observation">
+    <p><strong>Multi-anchor range.</strong> If anchored to maize domestication (~9,000 ya), N rises to 334&ndash;360. If anchored to El Mirador iconographic evidence (~2,325 ya), N drops to 78&ndash;93. All anchors clear the threshold. For a formal entry, the Architect stance recommends anchoring to the earliest undisputed <em>synthesis point</em> &mdash; the moment at which the identity-bearing components (crop, ritual, narrative) demonstrably coexist as a unified tradition &mdash; rather than to the raw material onset. El Mirador (~2,325 ya) is the strongest candidate for this, as its stucco panels depict precisely the Maize God and Hero Twin narratives that persist in the Popol Vuh. This remains an open question (see OQ-1 below).</p>
+  </div>
+
+  <!-- ── Score Grid ── -->
+  <h2>Score Grid</h2>
+
+  <table class="score-grid">
+    <thead>
+      <tr><th>Level</th><th>Stratigraphic</th><th>Custodial</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Material</strong></td>
+        <td><span class="badge-conf">CONFIRMED</span></td>
+        <td><span class="badge-undet">UNDERDETERMINED</span></td>
+        <td>Archaeological maize remains, ritual vessels, codex fragments, stucco panels (El Mirador ~300 BCE). No custodial accountability structure available for independent material verification.</td>
+      </tr>
+      <tr>
+        <td><strong>Practice</strong></td>
+        <td><span class="badge-conf">CONFIRMED</span></td>
+        <td><span class="badge-prob">PROBABLE</span></td>
+        <td>Nixtamalization archaeologically attested (San Bartolo, 7th&ndash;8th c. CE). Planting-harvest ceremonial cycle continuous through colonial period to present. Living practice persists among modern K&rsquo;iche&rsquo; and other Maya communities, but no formalised cross-community verification mechanism comparable to Aboriginal custodial structures has been documented.</td>
+      </tr>
+      <tr>
+        <td><strong>Semantic</strong></td>
+        <td><span class="badge-prob">PROBABLE</span></td>
+        <td><span class="badge-undet">UNDERDETERMINED</span></td>
+        <td>El Mirador panels (~300 BCE) depict Hero Twins and Maize God narratives matching Popol Vuh (transcribed ~1550 CE from pre-contact oral tradition). Modern K&rsquo;iche&rsquo; day-keepers maintain the creation narrative. Semantic continuity is <em>plausible</em>, but the protocol cannot score it as CONFIRMED without a documentable accountability structure for verifying faithful transmission vs post-contact reconstruction.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ── The Structural Problem ── -->
+  <h2>The Structural Problem This Entry Reveals</h2>
+
+  <div class="box-observation">
+    <p>The existing framework recognises three disruption types:</p>
+    <ul>
+      <li><strong>RUPTURED</strong> &mdash; tradition decays internally (e.g. Swabian Jura: no living community carries forward the Lion-Human&rsquo;s meaning).</li>
+      <li><strong>FORCIBLY INTERRUPTED</strong> &mdash; tradition destroyed by external violence (e.g. Tasmanian Aboriginal traditions under colonial genocide).</li>
+      <li><strong>SPECTACULARISED</strong> &mdash; tradition formally survives but meaning collapses through commodification.</li>
+    </ul>
+    <p>The Maya maize ritual fits none of these cleanly. The tradition survived colonial violence. The practice persists. The meaning system may well be intact. But the custodial accountability infrastructure &mdash; the institutional mechanisms by which a community verifies, sanctions, and corrects transmission &mdash; was degraded or destroyed by Spanish colonial suppression (burning of codices, killing of priestly lineages, forced conversion).</p>
+  </div>
+
+  <div class="box-inference">
+    <p>What was lost is not the tradition itself, but the <strong>community&rsquo;s capacity to externally verify its own fidelity</strong>. The K&rsquo;iche&rsquo; may well know that their maize narrative is the same as it was before 1524. But there is no surviving institutional mechanism &mdash; comparable to Aboriginal cross-clan corroboration, ritual sanctions for misstatement, or multi-elder review &mdash; that would let an external protocol confirm this independently. The practice survives; the means of proving semantic fidelity does not.</p>
+  </div>
+
+  <div class="box-proposal">
+    <h4 style="margin-top:0;">Proposed New Disruption Category: CUSTODIALLY ATTENUATED</h4>
+
+    <p><strong>Proposed tag: CUSTODIALLY ATTENUATED.</strong> Definition: tradition persists, verification infrastructure degraded by external disruption. Distinct from FORCIBLY INTERRUPTED (where the tradition itself is destroyed) and from RUPTURED (where decay is internal). This tag describes cases where the transmission signal survives but the error-correction infrastructure was dismantled.</p>
+
+    <p>The feedback that prompted this sketch observed: <em>&ldquo;I think that is where most traditions fail.&rdquo;</em> This is a hypothesis worth testing, not a confirmed finding. It is <em>possible</em> that CUSTODIALLY ATTENUATED describes a widespread pattern affecting Mesoamerican, West African, South Asian, Polynesian, and other long-duration traditions whose verification infrastructure was targeted by colonial disruption. If so, the Australian corridor&rsquo;s distinctiveness may lie not in the age or richness of its traditions (African evidence goes deeper in material terms) but in the survival of its custodial accountability structures through colonial contact. However, this generalisation currently rests on a single illustrative case. It requires systematic testing against the traditions listed in ST-1 before it can be treated as a structural claim about the global evidence landscape. See SF-7 below.</p>
+
+    <p><strong>Open deliberation:</strong> Does CUSTODIALLY ATTENUATED merit a standalone category, or is it better handled as a subtype of FORCIBLY INTERRUPTED (i.e. FORCIBLY INTERRUPTED&ndash;[Verification Layer])? The framework needs a Council deliberation with explicit scope-definition before the tag is formalised. See OQ-4 below.</p>
+  </div>
+
+  <!-- ── Methodological Defence ── -->
+  <h2>Methodological Note: Archive Bias</h2>
+
+  <div class="box-inference">
+    <p>A critical reader could object that the framework unintentionally privileges traditions that left <em>externally legible</em> verification institutions &mdash; that is, accountability structures recognisable to Western scholarly protocols. Under this reading, the custodial channel does not measure transmission fidelity <em>per se</em>, but rather the degree to which a community&rsquo;s internal verification practices happen to be documentable by external observers and compatible with the evidentiary standards of the archaeological and anthropological literature.</p>
+
+    <p>This objection has force. The protocol&rsquo;s epistemic asymmetry (GF-4) may not be a neutral property of the evidence. It may partly reflect what colonial archives, ethnographic fieldwork, and current scholarship are <em>able to detect</em>. Communities whose accountability mechanisms are encoded in forms unfamiliar to Western institutional frameworks &mdash; kinship-embedded correction, embodied ritual sanction, linguistic registers inaccessible without initiation &mdash; may possess robust verification infrastructure that the protocol cannot see.</p>
+
+    <p>The framework acknowledges this limitation without claiming to resolve it. The custodial channel is designed to register evidence <em>when it is available and documentable</em>, not to assert that absence of documentable evidence equals absence of verification. The UNDERDETERMINED classification is precisely intended to mark this gap: it says the protocol lacks the means to score, not that the tradition lacks the means to verify. Whether future ethnographic work can narrow this gap for specific traditions is an empirical question (see Discriminant Condition below).</p>
+  </div>
+
+  <!-- ── Scope Note ── -->
+  <h2>Scope Note: Generator Layers vs Breakwater Ledger</h2>
+
+  <div class="box-observation">
+    <p>The Breakwater Claim Analysis Ledger (v1.0-rc) is scoped as a forensic measurement instrument for scientific claims, producing COMPATIBLE / UNDERDETERMINED / INCONSISTENT classifications against explicit constraints. The Generator Layers dossier applies this architecture to a specific domain: the assessment of trans-generational creative tradition vitality. The score grid above uses CONFIRMED / PROBABLE / UNDERDETERMINED / RUPTURED classifications adapted for this domain, not the Ledger&rsquo;s canonical three-value output.</p>
+
+    <p>This adaptation is deliberate. The underlying protocol &mdash; claim, predictions, constraints, comparison, classification &mdash; follows the Ledger schema. The vocabulary is domain-specific. Both the adaptation and its boundaries are recorded here for architectural transparency. The Generator Layers dossier borrows the Ledger&rsquo;s visual language and epistemic discipline; it does not claim to <em>be</em> the Ledger.</p>
+  </div>
+
+  <!-- ── Discriminant Condition ── -->
+  <h2>Discriminant Condition</h2>
+
+  <div class="field-note">
+    <p><strong>Discriminant:</strong> Identification of a pre-contact Maya custodial accountability mechanism &mdash; cross-community verification of narrative fidelity, sanctions for misstatement, or institutional succession of interpretive authority &mdash; that survived the colonial period in documentable form.</p>
+    <p><strong>Feasibility:</strong> <span style="color:#8b6914;">MODERATE</span>. Ethnographic fieldwork among K&rsquo;iche&rsquo;, Yucatec, and other Maya communities could reveal surviving accountability practices not yet documented in the archaeological or anthropological literature. The Popol Vuh&rsquo;s own transmission history (oral tradition &rarr; K&rsquo;iche&rsquo; script ~1550 &rarr; Xim&eacute;nez transcription ~1700) suggests some chain of custodial authority existed at least through the early colonial period. Whether it persists in functional form is an open empirical question. The archive-bias caveat (see above) applies: absence of documentation does not confirm absence of mechanism.</p>
+  </div>
+
+  <!-- ── Scout Flag ── -->
+  <h2>Proposed Scout Flag</h2>
+
+  <div class="scout-flag">
+    <p><strong>SF-7 &middot; Custodial attenuation as potential global pattern.</strong> If the Maya case generalises, then the framework&rsquo;s epistemic asymmetry (GF-4) may not be a quirk of the evidence base but a structural feature of post-colonial knowledge: many long-duration traditions outside Australia would ceiling at Semantic-UNDERDETERMINED because their verification infrastructure was targeted by colonial disruption. This is currently a hypothesis derived from a single case. <em>Action:</em> Test against Polynesian genealogical chants (ST-1), West African drumming traditions, and South Asian temple lineages. If all show the same custodial-attenuation pattern, the framework must formally acknowledge it. If they do not &mdash; if some traditions outside Australia retain documentable accountability structures &mdash; then the category is valid but the global-default claim is not. Either outcome is informative.</p>
+  </div>
+
+  <!-- ── Sources ── -->
+  <h2>Sources (Preliminary)</h2>
+
+  <dl>
+    <dt>[110]</dt><dd>Kennett, D.J. <em>et al.</em> (2020). Early isotopic evidence for maize as a staple grain in the Americas. <em>Science Advances</em> 6, eaba3245.</dd>
+    <dt>[111]</dt><dd>Piperno, D.R. <em>et al.</em> (2009). Starch grain and phytolith evidence for early ninth millennium B.P. maize from the Central Balsas River Valley, Mexico. <em>PNAS</em> 106, 5019&ndash;5024.</dd>
+    <dt>[112]</dt><dd>Hansen, R.D. (2009). El Mirador stucco panels. Pre-Classic Maya site, Guatemala. Panels dated ~300 BCE depicting Hero Twins and Maize God narratives.</dd>
+    <dt>[113]</dt><dd>Tedlock, D. (1996). <em>Popol Vuh: The Definitive Edition of the Mayan Book of the Dawn of Life and the Glories of Gods and Kings</em>. Rev. ed. Simon &amp; Schuster.</dd>
+    <dt>[114]</dt><dd>Santini, L.M. <em>et al.</em> (2022). First archaeological identification of nixtamalized maize at the ancient Maya site of San Bartolo, Guatemala. <em>Journal of Archaeological Science</em> 141, 105575.</dd>
+    <dt>[115]</dt><dd>Taube, K. (1985). The Classic Maya Maize God: A Reappraisal. In <em>Fifth Palenque Round Table, 1983</em>. PARI.</dd>
+  </dl>
+
+  <!-- ── Open Questions ── -->
+  <h2>Open Questions for Domain-Expert Review</h2>
+
+  <ol>
+    <li><strong>OQ-1 &middot; Date anchor.</strong> Should the entry anchor to maize domestication (~9,000 ya), maize as staple (~4,000 ya), earliest Maya ceremonial deposits (~2,700 ya), or El Mirador iconographic evidence (~2,325 ya)? The Architect stance recommends the earliest undisputed synthesis point where crop, ritual, and narrative demonstrably coexist. The composite nature of the tradition makes this non-trivial.</li>
+    <li><strong>OQ-2 &middot; Tradition scope.</strong> Is &ldquo;Maya Maize Ritual Complex&rdquo; one tradition or several? The creation narrative (Popol Vuh), the Maize God cult, and the agricultural ceremonial cycle may have distinct transmission histories. A formal Ledger entry would likely require decomposition into sub-entries (C7a, C7b, C7c) with independent scoring.</li>
+    <li><strong>OQ-3 &middot; Custodial evidence.</strong> Are there ethnographic accounts of surviving K&rsquo;iche&rsquo; or Yucatec Maya accountability mechanisms for narrative fidelity? The day-keeper tradition (mentioned by Tedlock) is a candidate, but its verification function &mdash; as distinct from its interpretive function &mdash; has not been assessed. If such mechanisms exist, the semantic-custodial score could upgrade to PROBABLE.</li>
+    <li><strong>OQ-4 &middot; Category architecture.</strong> Does CUSTODIALLY ATTENUATED merit a standalone disruption category, or is it better handled as a subtype: FORCIBLY INTERRUPTED&ndash;[Verification Layer]? The distinction matters for schema consistency. The burning of codices and killing of priests was forcible interruption of the <em>verification</em> layer, even though the tradition itself survived. Council deliberation required.</li>
+    <li><strong>OQ-5 &middot; Popol Vuh as evidence.</strong> The Popol Vuh was transcribed ~1550 from oral tradition, then copied by Xim&eacute;nez ~1700. Is the transcription itself evidence of custodial transmission (a successful handoff to written form), or evidence of its terminal phase (a last-resort preservation act as oral transmission was failing)?</li>
+    <li><strong>OQ-6 &middot; Archive bias.</strong> Does the framework&rsquo;s custodial criterion inadvertently privilege traditions whose verification mechanisms are legible to Western scholarly protocols? If so, is this a correctable bias (addressable through broader ethnographic fieldwork) or a structural limitation of any protocol that requires documentable evidence?</li>
+  </ol>
+
+  <div class="sketch-banner">
+    <strong>This sketch is an invitation to correct, not a claim to be right.</strong>
+    The protocol improves when people use it and it breaks.
+  </div>
+
+  <div class="compass">&diams; &middot; &diams; &middot; &diams;</div>
+</main>
+<footer>
+  Dossier v0.3 &middot; Council-5 ADM-EC &middot; Guardian stance with Architect, Scout,
+  Cartographer, Verifier inputs.<br>
+  <a href="https://harbour-architecture.github.io/root/">Open Science Harbour</a> &middot;
+  Breakwater layer &middot; Preliminary sketch &mdash; not yet scored
+</footer>
+</body>
+</html>

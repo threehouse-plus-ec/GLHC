@@ -1,55 +1,293 @@
 {
   "constraint": [
-    { "id": 1, "ref": "Wang, R.J. et al. (2023). Human generation times across the past 250,000 years. Science Advances 9(1), eabm7047.", "role": "Primary: g = 26.9 y, sex-specific intervals." },
-    { "id": 4, "ref": "Fenner, J.N. (2005). Cross-cultural estimation of the human generation interval. Am. J. Phys. Anthropol. 128(2), 415\u2013423.", "role": "Independent cross-cultural validation." },
-    { "id": 6, "ref": "Bergstr\u00f6m, A. et al. (2021). Origins of modern human ancestry. Nature 590, 229\u2013237.", "role": "Palaeogenomic turnover; pedigree-collapse caveat." },
-    { "id": 7, "ref": "Lazaridis, I. et al. (2016). Genomic insights into the origin of farming. Nature 536, 419\u2013424.", "role": "Population replacement evidence." },
-    { "id": 8, "ref": "Mallick, S. et al. (2016). The Simons Genome Diversity Project. Nature 538, 201\u2013206.", "role": "Global genomic diversity baseline." }
+    {
+      "id": 1,
+      "ref": "Wang, R.J. et al. (2023). Human generation times across the past 250,000 years. Science Advances 9(1), eabm7047.",
+      "role": "Primary: g = 26.9 y, sex-specific intervals."
+    },
+    {
+      "id": 4,
+      "ref": "Fenner, J.N. (2005). Cross-cultural estimation of the human generation interval. Am. J. Phys. Anthropol. 128(2), 415–423.",
+      "role": "Independent cross-cultural validation."
+    },
+    {
+      "id": 6,
+      "ref": "Bergström, A. et al. (2021). Origins of modern human ancestry. Nature 590, 229–237.",
+      "role": "Palaeogenomic turnover; pedigree-collapse caveat."
+    },
+    {
+      "id": 7,
+      "ref": "Lazaridis, I. et al. (2016). Genomic insights into the origin of farming. Nature 536, 419–424.",
+      "role": "Population replacement evidence."
+    },
+    {
+      "id": 8,
+      "ref": "Mallick, S. et al. (2016). The Simons Genome Diversity Project. Nature 538, 201–206.",
+      "role": "Global genomic diversity baseline."
+    }
   ],
   "claim": [
-    { "id": 10, "site": "A1", "ref": "Sehasseh, E.M. et al. (2021). Early Middle Stone Age personal ornaments from Bizmoune Cave. Science Advances 7(39), eabi8620." },
-    { "id": 11, "site": "A2", "ref": "Henshilwood, C.S. et al. (2002). Emergence of modern human behaviour. Science 295, 1278\u20131280." },
-    { "id": 12, "site": "A2", "ref": "Henshilwood, C.S. et al. (2009). Engraved ochres from Blombos Cave. J. Hum. Evol. 57(1), 27\u201347." },
-    { "id": 13, "site": "A2", "ref": "Henshilwood, C.S. et al. (2011). A 100,000-year-old ochre-processing workshop. Science 334, 219\u2013222." },
-    { "id": 14, "site": "B1", "ref": "Clarkson, C. et al. (2017). Human occupation of northern Australia by 65,000 years ago. Nature 547, 306\u2013310." },
-    { "id": 15, "site": "B1", "ref": "Maloney, T. et al. (2014). The multi-generational use of Madjedbebe. Australian Archaeology 78, 43\u201353." },
-    { "id": 16, "site": "B2", "ref": "Mulvaney, K. (2015). Murujuga: Rock Art, Rainmaking and the Ruined River. UWA Press." },
-    { "id": 24, "site": "B3", "ref": "David, B. et al. (2011). Nawarla Gabarnmang, a 45,180 cal BP site. Australian Archaeology 73, 73\u201377." },
-    { "id": 25, "site": "B3", "ref": "David, B. et al. (2013). How old are Australia\u2019s pictographs? J. Archaeol. Sci. 40(1), 3\u201310." },
-    { "id": 26, "site": "B3", "ref": "David, B. et al. (2017). Dating painted Panel E1. Antiquity 91(356), 135\u2013149." },
-    { "id": 27, "site": "B4", "ref": "Finch, D. et al. (2021). Ages for Australia\u2019s oldest rock paintings. Nature Human Behaviour 5, 310\u2013318." },
-    { "id": 28, "site": "B5", "ref": "Clarkson, C. et al. (2017). [as B1, axe technology component]." },
-    { "id": 29, "site": "B5", "ref": "Geneste, J.-M. et al. (2012). Earliest evidence for ground-edge axes. Australian Archaeology 74, 55\u201360." },
-    { "id": 30, "site": "B5", "ref": "Hiscock, P. et al. (2016). World\u2019s earliest ground-edge axe production. Australian Archaeology 82(1), 2\u201311." },
-    { "id": 36, "site": "C1", "ref": "Oktaviana, A.A. et al. (2024). Narrative cave art in Indonesia by 51,200 years ago. Nature 635, 22\u201326." },
-    { "id": 91, "site": "C1", "ref": "Oktaviana, A.A. et al. (2026). Oldest cave art found in Indonesia. Nature 650, 652\u2013656. [Muna Island, \u226567,800 ya]" },
-    { "id": 40, "site": "C2", "ref": "Conard, N.J. (2009). A female figurine from the basal Aurignacian of Hohle Fels. Nature 459, 248\u2013252." },
-    { "id": 41, "site": "C2", "ref": "Conard, N.J. et al. (2009). New flutes document the earliest musical tradition. J. Hum. Evol. 56(4), 407\u2013415." },
-    { "id": 42, "site": "C3", "ref": "Pike, A.W.G. et al. (2012). U-series dating of Paleolithic art in 11 caves in Spain. Science 336, 1409\u20131413." },
-    { "id": 92, "site": "C4", "ref": "Romero Villanueva, G. et al. (2024). Earliest satisfactorily dated rock art in South America. Science Advances 10(7), eadk4415." },
-    { "id": 46, "site": "C5", "ref": "Zhang, J. et al. (1999). Oldest playable musical instruments found at Jiahu. Nature 401, 366\u2013368." },
-    { "id": 95, "site": "C6", "ref": "Chase, P.G. & Nowell, A. (1998). Taphonomy of a suggested Middle Paleolithic bone flute. Current Anthropology 39(4), 549\u2013553." },
-    { "id": 96, "site": "C6", "ref": "d\u2019Errico, F. et al. (1998). Neanderthal acculturation in western Europe? Current Anthropology 39, S1\u2013S44." },
-    { "id": 97, "site": "C6", "ref": "Turk, M. et al. (2006). New analyses of the Divje Babe I bone. L\u2019Anthropologie 110(3), 293\u2013317." },
-    { "id": 98, "site": "C6", "ref": "Turk, M. et al. (2020). The Mousterian Musical Instrument from Divje Babe I. Applied Sciences 10(4), 1226." }
+    {
+      "id": 10,
+      "site": "A1",
+      "ref": "Sehasseh, E.M. et al. (2021). Early Middle Stone Age personal ornaments from Bizmoune Cave. Science Advances 7(39), eabi8620."
+    },
+    {
+      "id": 11,
+      "site": "A2",
+      "ref": "Henshilwood, C.S. et al. (2002). Emergence of modern human behaviour. Science 295, 1278–1280."
+    },
+    {
+      "id": 12,
+      "site": "A2",
+      "ref": "Henshilwood, C.S. et al. (2009). Engraved ochres from Blombos Cave. J. Hum. Evol. 57(1), 27–47."
+    },
+    {
+      "id": 13,
+      "site": "A2",
+      "ref": "Henshilwood, C.S. et al. (2011). A 100,000-year-old ochre-processing workshop. Science 334, 219–222."
+    },
+    {
+      "id": 14,
+      "site": "B1",
+      "ref": "Clarkson, C. et al. (2017). Human occupation of northern Australia by 65,000 years ago. Nature 547, 306–310."
+    },
+    {
+      "id": 15,
+      "site": "B1",
+      "ref": "Maloney, T. et al. (2014). The multi-generational use of Madjedbebe. Australian Archaeology 78, 43–53."
+    },
+    {
+      "id": 16,
+      "site": "B2",
+      "ref": "Mulvaney, K. (2015). Murujuga: Rock Art, Rainmaking and the Ruined River. UWA Press."
+    },
+    {
+      "id": 24,
+      "site": "B3",
+      "ref": "David, B. et al. (2011). Nawarla Gabarnmang, a 45,180 cal BP site. Australian Archaeology 73, 73–77."
+    },
+    {
+      "id": 25,
+      "site": "B3",
+      "ref": "David, B. et al. (2013). How old are Australia’s pictographs? J. Archaeol. Sci. 40(1), 3–10."
+    },
+    {
+      "id": 26,
+      "site": "B3",
+      "ref": "David, B. et al. (2017). Dating painted Panel E1. Antiquity 91(356), 135–149."
+    },
+    {
+      "id": 27,
+      "site": "B4",
+      "ref": "Finch, D. et al. (2021). Ages for Australia’s oldest rock paintings. Nature Human Behaviour 5, 310–318."
+    },
+    {
+      "id": 28,
+      "site": "B5",
+      "ref": "Clarkson, C. et al. (2017). [as B1, axe technology component]."
+    },
+    {
+      "id": 29,
+      "site": "B5",
+      "ref": "Geneste, J.-M. et al. (2012). Earliest evidence for ground-edge axes. Australian Archaeology 74, 55–60."
+    },
+    {
+      "id": 30,
+      "site": "B5",
+      "ref": "Hiscock, P. et al. (2016). World’s earliest ground-edge axe production. Australian Archaeology 82(1), 2–11."
+    },
+    {
+      "id": 36,
+      "site": "C1",
+      "ref": "Oktaviana, A.A. et al. (2024). Narrative cave art in Indonesia by 51,200 years ago. Nature 635, 22–26."
+    },
+    {
+      "id": 91,
+      "site": "C1",
+      "ref": "Oktaviana, A.A. et al. (2026). Oldest cave art found in Indonesia. Nature 650, 652–656. [Muna Island, ≥67,800 ya]"
+    },
+    {
+      "id": 40,
+      "site": "C2",
+      "ref": "Conard, N.J. (2009). A female figurine from the basal Aurignacian of Hohle Fels. Nature 459, 248–252."
+    },
+    {
+      "id": 41,
+      "site": "C2",
+      "ref": "Conard, N.J. et al. (2009). New flutes document the earliest musical tradition. J. Hum. Evol. 56(4), 407–415."
+    },
+    {
+      "id": 42,
+      "site": "C3",
+      "ref": "Pike, A.W.G. et al. (2012). U-series dating of Paleolithic art in 11 caves in Spain. Science 336, 1409–1413."
+    },
+    {
+      "id": 92,
+      "site": "C4",
+      "ref": "Romero Villanueva, G. et al. (2024). Earliest satisfactorily dated rock art in South America. Science Advances 10(7), eadk4415."
+    },
+    {
+      "id": 46,
+      "site": "C5",
+      "ref": "Zhang, J. et al. (1999). Oldest playable musical instruments found at Jiahu. Nature 401, 366–368."
+    },
+    {
+      "id": 95,
+      "site": "C6",
+      "ref": "Chase, P.G. & Nowell, A. (1998). Taphonomy of a suggested Middle Paleolithic bone flute. Current Anthropology 39(4), 549–553."
+    },
+    {
+      "id": 96,
+      "site": "C6",
+      "ref": "d’Errico, F. et al. (1998). Neanderthal acculturation in western Europe? Current Anthropology 39, S1–S44."
+    },
+    {
+      "id": 97,
+      "site": "C6",
+      "ref": "Turk, M. et al. (2006). New analyses of the Divje Babe I bone. L’Anthropologie 110(3), 293–317."
+    },
+    {
+      "id": 98,
+      "site": "C6",
+      "ref": "Turk, M. et al. (2020). The Mousterian Musical Instrument from Divje Babe I. Applied Sciences 10(4), 1226."
+    },
+    {
+      "id": 110,
+      "site": "C7",
+      "ref": "Kennett, D.J. et al. (2020). Early isotopic evidence for maize as a staple grain in the Americas. Science Advances 6, eaba3245."
+    },
+    {
+      "id": 111,
+      "site": "C7",
+      "ref": "Piperno, D.R. et al. (2009). Starch grain and phytolith evidence for early ninth millennium B.P. maize from the Central Balsas River Valley, Mexico. PNAS 106, 5019-5024."
+    },
+    {
+      "id": 112,
+      "site": "C7",
+      "ref": "Hansen, R.D. (2009). El Mirador stucco panels. Pre-Classic Maya site, Guatemala. Panels dated ~300 BCE."
+    },
+    {
+      "id": 113,
+      "site": "C7",
+      "ref": "Tedlock, D. (1996). Popol Vuh: The Definitive Edition. Rev. ed. Simon and Schuster."
+    },
+    {
+      "id": 114,
+      "site": "C7",
+      "ref": "Santini, L.M. et al. (2022). First archaeological identification of nixtamalized maize at San Bartolo, Guatemala. Journal of Archaeological Science 141, 105575."
+    },
+    {
+      "id": 115,
+      "site": "C7",
+      "ref": "Taube, K. (1985). The Classic Maya Maize God: A Reappraisal. In Fifth Palenque Round Table, 1983. PARI."
+    }
   ],
   "custodial": [
-    { "id": 18, "ref": "Kakadu National Park Management Plan (2016). Director of National Parks, Canberra.", "role": "Custodial governance for Madjedbebe/Jabiluka." },
-    { "id": 19, "ref": "Jawoyn Association Aboriginal Corporation. Public cultural heritage statements.", "role": "Custodial authority for Nawarla Gabarnmang." },
-    { "id": 20, "ref": "Murujuga Aboriginal Corporation. Cultural management plans.", "role": "Custodial authority for Burrup Peninsula." },
-    { "id": 99, "ref": "UNESCO WHC Decision 47 COM 8B.13 (2025). Inscription of Murujuga, 11 July 2025.", "role": "International inscription." }
+    {
+      "id": 18,
+      "ref": "Kakadu National Park Management Plan (2016). Director of National Parks, Canberra.",
+      "role": "Custodial governance for Madjedbebe/Jabiluka."
+    },
+    {
+      "id": 19,
+      "ref": "Jawoyn Association Aboriginal Corporation. Public cultural heritage statements.",
+      "role": "Custodial authority for Nawarla Gabarnmang."
+    },
+    {
+      "id": 20,
+      "ref": "Murujuga Aboriginal Corporation. Cultural management plans.",
+      "role": "Custodial authority for Burrup Peninsula."
+    },
+    {
+      "id": 99,
+      "ref": "UNESCO WHC Decision 47 COM 8B.13 (2025). Inscription of Murujuga, 11 July 2025.",
+      "role": "International inscription."
+    }
   ],
   "deprecated": [
-    { "former_id": 2, "source": "ISOGG Wiki (generation time)", "status": "Demoted: navigation-only", "replacement": "[1]" },
-    { "former_id": 3, "source": "Wang et al. duplicate", "status": "Removed: merged", "replacement": "[1]" },
-    { "former_id": 5, "source": "Genetic Literacy Project", "status": "Demoted: popular press", "replacement": "[1]" },
-    { "former_id": 21, "source": "CNN (Huenul 1)", "status": "Demoted: secondary", "replacement": "[92]" },
-    { "former_id": 22, "source": "Buenos Aires Herald (Huenul 1)", "status": "Demoted: secondary", "replacement": "[92]" },
-    { "former_id": 23, "source": "Artnet (Huenul 1)", "status": "Demoted: secondary", "replacement": "[92]" },
-    { "former_id": 37, "source": "\"Aubert et al. (2025)\" [incorrect]", "status": "Corrected: wrong attribution", "replacement": "[91]" },
-    { "former_id": 43, "source": "Wikipedia (Hohle Fels)", "status": "Demoted: navigation-only", "replacement": "[40][41]" },
-    { "former_id": 44, "source": "Ancient Origins (Divje Babe)", "status": "Removed: non-peer-reviewed", "replacement": "[95][96][97][98]" },
-    { "former_id": 45, "source": "Awaramusafir (Huenul 1)", "status": "Removed: non-peer-reviewed", "replacement": "[92]" },
-    { "former_id": 90, "source": "Wikipedia (Genetic history)", "status": "Demoted: navigation-only", "replacement": "[6][7][8]" }
+    {
+      "former_id": 2,
+      "source": "ISOGG Wiki (generation time)",
+      "status": "Demoted: navigation-only",
+      "replacement": "[1]"
+    },
+    {
+      "former_id": 3,
+      "source": "Wang et al. duplicate",
+      "status": "Removed: merged",
+      "replacement": "[1]"
+    },
+    {
+      "former_id": 5,
+      "source": "Genetic Literacy Project",
+      "status": "Demoted: popular press",
+      "replacement": "[1]"
+    },
+    {
+      "former_id": 21,
+      "source": "CNN (Huenul 1)",
+      "status": "Demoted: secondary",
+      "replacement": "[92]"
+    },
+    {
+      "former_id": 22,
+      "source": "Buenos Aires Herald (Huenul 1)",
+      "status": "Demoted: secondary",
+      "replacement": "[92]"
+    },
+    {
+      "former_id": 23,
+      "source": "Artnet (Huenul 1)",
+      "status": "Demoted: secondary",
+      "replacement": "[92]"
+    },
+    {
+      "former_id": 37,
+      "source": "\"Aubert et al. (2025)\" [incorrect]",
+      "status": "Corrected: wrong attribution",
+      "replacement": "[91]"
+    },
+    {
+      "former_id": 43,
+      "source": "Wikipedia (Hohle Fels)",
+      "status": "Demoted: navigation-only",
+      "replacement": "[40][41]"
+    },
+    {
+      "former_id": 44,
+      "source": "Ancient Origins (Divje Babe)",
+      "status": "Removed: non-peer-reviewed",
+      "replacement": "[95][96][97][98]"
+    },
+    {
+      "former_id": 45,
+      "source": "Awaramusafir (Huenul 1)",
+      "status": "Removed: non-peer-reviewed",
+      "replacement": "[92]"
+    },
+    {
+      "former_id": 90,
+      "source": "Wikipedia (Genetic history)",
+      "status": "Demoted: navigation-only",
+      "replacement": "[6][7][8]"
+    }
+  ],
+  "landscape": [
+    {
+      "id": 100,
+      "ref": "Boyd, R. and Richerson, P.J. (1985). Culture and the Evolutionary Process. University of Chicago Press.",
+      "role": "Foundational models of cultural transmission."
+    },
+    {
+      "id": 101,
+      "ref": "Henrich, J. (2015). The Secret of Our Success. Princeton University Press.",
+      "role": "Evolutionary lens on cumulative culture."
+    },
+    {
+      "id": 102,
+      "ref": "Tehrani, J.J. (2013). The Phylogeny of Little Red Riding Hood. PLOS ONE 8(11), e78871.",
+      "role": "Phylogenetic methods applied to folk narrative traditions."
+    }
   ]
 }

@@ -99,6 +99,9 @@
         h+=s.discriminant.condition;
         h+=' <strong>Feasibility: <span class="'+fc+'">'+s.discriminant.feasibility+'</span></strong></div>';
       }
+      if(s.sketch_url){
+        h+='<p style="font-size:.88rem;margin-top:.5rem;"><strong>&rarr;</strong> <a href="'+s.sketch_url+'">Detailed preliminary sketch</a> (full score rationale, methodological notes, open questions)</p>';
+      }
       h+='</div>';
     });
   });
