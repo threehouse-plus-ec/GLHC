@@ -34,7 +34,12 @@
   });
   h+="</tbody></table>";
 
-  h+="<h2>4 &mdash; Deprecated / Demoted Sources</h2>";
+  h+="<h2>4 &mdash; Related Work (Landscape)</h2>";
+  h+='<table class="ref-table"><thead><tr><th>#</th><th>Reference</th><th>Role</th></tr></thead><tbody>';
+  if(d.landscape){d.landscape.forEach(function(r){h+='<tr><td class="ref-id">['+r.id+']</td><td>'+r.ref+'</td><td>'+r.role+'</td></tr>';});}
+  h+="</tbody></table>";
+
+  h+="<h2>5 &mdash; Deprecated / Demoted Sources</h2>";
   h+="<p>Sources removed from load-bearing status. Explicit audit trail.</p>";
   h+='<table class="ref-table"><thead><tr><th>Former #</th><th>Source</th><th>Status</th><th>Replacement</th></tr></thead><tbody>';
   d.deprecated.forEach(function(r){
