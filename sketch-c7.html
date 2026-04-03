@@ -5,90 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Preliminary Sketch: C7 Maya Maize Ritual &mdash; Generator Layers</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sketch-shared.css">
   <style>
-    /* ── Status banner ── */
-    .sketch-banner {
-      background: rgba(160,82,45,.12);
-      border: 2px dashed var(--burnt-sienna, #a0522d);
-      padding: 1rem 1.2rem;
-      margin: 1.5rem 0;
-      font-family: 'Special Elite', monospace;
-      font-size: .85rem;
-    }
-
-    /* ── Score grid ── */
-    .score-grid { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .9rem; }
-    .score-grid th, .score-grid td { border: 1px solid var(--gold, #c9a84c); padding: .4rem .6rem; text-align: center; }
-    .score-grid th { background: rgba(201,168,76,.15); font-family: 'Special Elite', monospace; font-size: .8rem; }
-    .badge-conf { background: #2d5016; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: .75rem; }
-    .badge-prob { background: #8b6914; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: .75rem; }
-    .badge-undet { background: #a0522d; color: #fff; padding: 2px 6px; border-radius: 3px; font-size: .75rem; }
-
-    /* ── Three-tier visual distinction system ── */
-
-    /* OBSERVATION: confirmed factual claims grounded in cited evidence */
-    .box-observation {
-      border: 1px solid var(--gold, #c9a84c);
-      border-left: 4px solid #2d5016;
-      padding: 1rem 1.2rem;
-      margin: 1.5rem 0;
-      background: rgba(45,80,22,.04);
-    }
-    .box-observation::before {
-      content: "OBSERVATION";
-      display: block;
-      font-family: 'Special Elite', monospace;
-      font-size: .7rem;
-      letter-spacing: .15em;
-      color: #2d5016;
-      margin-bottom: .4rem;
-    }
-
-    /* INFERENCE: interpretive claims that go beyond direct evidence */
-    .box-inference {
-      border: 1px solid var(--gold, #c9a84c);
-      border-left: 4px solid #8b6914;
-      padding: 1rem 1.2rem;
-      margin: 1.5rem 0;
-      background: rgba(139,105,20,.04);
-    }
-    .box-inference::before {
-      content: "INFERENCE";
-      display: block;
-      font-family: 'Special Elite', monospace;
-      font-size: .7rem;
-      letter-spacing: .15em;
-      color: #8b6914;
-      margin-bottom: .4rem;
-    }
-
-    /* PROPOSAL: framework extensions or new categories requiring deliberation */
-    .box-proposal {
-      border: 2px solid var(--burnt-sienna, #a0522d);
-      border-left: 4px solid #a0522d;
-      padding: 1rem 1.2rem;
-      margin: 1.5rem 0;
-      background: rgba(160,82,45,.06);
-    }
-    .box-proposal::before {
-      content: "FRAMEWORK PROPOSAL";
-      display: block;
-      font-family: 'Special Elite', monospace;
-      font-size: .7rem;
-      letter-spacing: .15em;
-      color: #a0522d;
-      margin-bottom: .4rem;
-    }
-
-    /* ── Supporting elements ── */
-    .timeline-box {
-      border: 1px solid var(--gold, #c9a84c);
-      padding: 1rem;
-      margin: 1rem 0;
-      font-size: .88rem;
-    }
-    .timeline-box dt { font-weight: bold; margin-top: .5rem; }
-    .timeline-box dd { margin-left: 1.5rem; margin-bottom: .3rem; }
     .composite-note {
       font-size: .85rem;
       border: 1px dashed var(--gold, #c9a84c);
@@ -100,8 +18,14 @@
 </head>
 <body>
 <header class="site-header">
+  <div style="margin-bottom: 1rem;">
+    <a class="brand-lockup" href="index.html" aria-label="T(h)reehouse +EC home">
+      <img src="emblem-64.svg" alt="T(h)reehouse +EC emblem">
+      <img src="wordmark-full.svg" alt="T[h]ree +EC wordmark">
+    </a>
+  </div>
   <a class="harbour-link" href="https://harbour-architecture.github.io/root/">Open Science Harbour</a>
-  <span style="font-family:'Special Elite',monospace;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-light)"> &middot; Breakwater</span>
+  <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;color:var(--stone)"> &middot; Breakwater</span>
   <h1 class="site-title">Generator Layers</h1>
   <p class="site-subtitle">Trans-Generational Creative Traditions &mdash; A Field Dossier</p>
 </header>
