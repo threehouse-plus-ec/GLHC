@@ -22,10 +22,7 @@
     }
     .chart-legend span { display: inline-flex; align-items: center; gap: .35rem; }
     .chart-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
-    .data-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-    .data-table th, .data-table td { padding: .5rem .6rem; border-bottom: 1px solid var(--gold-dark); text-align: left; }
-    .data-table th { font-family: 'Special Elite', monospace; text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; color: var(--ink-light); border-bottom: 2px solid var(--gold); }
-    .data-table tr:hover { background: rgba(201,168,76,.08); }
+    .data-table td:first-child { white-space: nowrap; }
     .loading { font-family: 'Special Elite', monospace; color: var(--ink-light); text-align: center; padding: 2rem; }
   </style>
 </head>
@@ -85,21 +82,24 @@
   </div>
 
   <h2>Error Budget</h2>
-  <table class="error-budget">
-    <thead><tr><th>Source</th><th>Magnitude</th><th>Affects</th><th>Mitigation</th></tr></thead>
-    <tbody>
-      <tr><td>EB-1 &middot; g variance</td><td>&plusmn;17% on N</td><td>All layer-depth calculations</td><td>Sensitivity band (g=25&ndash;30). No threshold-crossings sensitive.</td></tr>
-      <tr><td>EB-2 &middot; Epistemic asymmetry</td><td>Binary</td><td>All non-Australian sites</td><td>Dual-channel protocol. Custodial Null defined.</td></tr>
-      <tr><td>EB-3 &middot; Cascade rule</td><td>Systematic downgrade</td><td>Semantic without Practice anchor</td><td>Epistemic, not ontological. Karampuang downgraded v0.3.</td></tr>
-      <tr><td>EB-4 &middot; Dating uncertainty</td><td>&plusmn;5&ndash;20%</td><td>Individual N-values</td><td>Minimum-age constraints. Dating Revision Protocol.</td></tr>
-      <tr><td>EB-5 &middot; Pedigree collapse</td><td>Systematic</td><td>Interpretation of N</td><td>N is depth, not breadth. Palaeogenomic evidence cited.</td></tr>
-      <tr><td>EB-6 &middot; Neanderthal boundary</td><td>Binary</td><td>El Castillo, Divje Babe</td><td>Deferred deliberation (GF-5).</td></tr>
-      <tr><td>EB-7 &middot; Convergence vs. diffusion</td><td>Classificatory</td><td>Cross-continental comparisons</td><td>PROBABLE-[Convergent] annotation.</td></tr>
-      <tr><td>EB-8 &middot; UNDET. feasibility</td><td>Variable</td><td>Open entries</td><td>Discriminant Condition + Feasibility Flag.</td></tr>
-      <tr><td>EB-9 &middot; Stratigraphic gaps</td><td>Site-specific</td><td>Continuity claims</td><td>Nawarla gap bridged by custodial. Sulawesi LGM flagged.</td></tr>
-      <tr><td>EB-10 &middot; Anchor convention</td><td>Systematic offset</td><td>Absolute N-values</td><td>52,500 ya declared; substitution invited.</td></tr>
-    </tbody>
-  </table>
+  <div class="table-wrap" role="region" aria-labelledby="error-budget-caption" tabindex="0">
+    <table class="error-budget stackable">
+      <caption id="error-budget-caption">Current error-budget register for the dossier</caption>
+      <thead><tr><th scope="col">Source</th><th scope="col">Magnitude</th><th scope="col">Affects</th><th scope="col">Mitigation</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Source">EB-1 &middot; g variance</td><td data-label="Magnitude">&plusmn;17% on N</td><td data-label="Affects">All layer-depth calculations</td><td data-label="Mitigation">Sensitivity band (g=25&ndash;30). No threshold-crossings sensitive.</td></tr>
+        <tr><td data-label="Source">EB-2 &middot; Epistemic asymmetry</td><td data-label="Magnitude">Binary</td><td data-label="Affects">All non-Australian sites</td><td data-label="Mitigation">Dual-channel protocol. Custodial Null defined.</td></tr>
+        <tr><td data-label="Source">EB-3 &middot; Cascade rule</td><td data-label="Magnitude">Systematic downgrade</td><td data-label="Affects">Semantic without Practice anchor</td><td data-label="Mitigation">Epistemic, not ontological. Karampuang downgraded v0.3.</td></tr>
+        <tr><td data-label="Source">EB-4 &middot; Dating uncertainty</td><td data-label="Magnitude">&plusmn;5&ndash;20%</td><td data-label="Affects">Individual N-values</td><td data-label="Mitigation">Minimum-age constraints. Dating Revision Protocol.</td></tr>
+        <tr><td data-label="Source">EB-5 &middot; Pedigree collapse</td><td data-label="Magnitude">Systematic</td><td data-label="Affects">Interpretation of N</td><td data-label="Mitigation">N is depth, not breadth. Palaeogenomic evidence cited.</td></tr>
+        <tr><td data-label="Source">EB-6 &middot; Neanderthal boundary</td><td data-label="Magnitude">Binary</td><td data-label="Affects">El Castillo, Divje Babe</td><td data-label="Mitigation">Deferred deliberation (GF-5).</td></tr>
+        <tr><td data-label="Source">EB-7 &middot; Convergence vs. diffusion</td><td data-label="Magnitude">Classificatory</td><td data-label="Affects">Cross-continental comparisons</td><td data-label="Mitigation">PROBABLE-[Convergent] annotation.</td></tr>
+        <tr><td data-label="Source">EB-8 &middot; UNDET. feasibility</td><td data-label="Magnitude">Variable</td><td data-label="Affects">Open entries</td><td data-label="Mitigation">Discriminant Condition + Feasibility Flag.</td></tr>
+        <tr><td data-label="Source">EB-9 &middot; Stratigraphic gaps</td><td data-label="Magnitude">Site-specific</td><td data-label="Affects">Continuity claims</td><td data-label="Mitigation">Nawarla gap bridged by custodial. Sulawesi LGM flagged.</td></tr>
+        <tr><td data-label="Source">EB-10 &middot; Anchor convention</td><td data-label="Magnitude">Systematic offset</td><td data-label="Affects">Absolute N-values</td><td data-label="Mitigation">52,500 ya declared; substitution invited.</td></tr>
+      </tbody>
+    </table>
+  </div>
   <div class="field-note">
     <p><strong>Hierarchy:</strong> EB-1 and EB-2 dominate. EB-1 shifts all N-values proportionally but does not affect threshold-crossings. EB-2 systematically caps non-Australian Semantic scores.</p>
   </div>
@@ -243,14 +243,14 @@
 
   /* Anchor Table */
   var sorted=[].concat(chartSites).sort(function(a,b){return b.date_ya-a.date_ya;});
-  var ah='<table class="data-table"><thead><tr><th>Site</th><th>Date</th><th>N (g=25)</th><th>N (g=26.9)</th><th>N (g=30)</th></tr></thead><tbody>';
+  var ah='<div class="table-wrap" role="region" aria-labelledby="anchor-table-caption" tabindex="0"><table class="data-table"><caption id="anchor-table-caption">Anchor depth comparison across generation intervals</caption><thead><tr><th scope="col">Site</th><th scope="col">Date</th><th scope="col" class="num">N (g=25)</th><th scope="col" class="num">N (g=26.9)</th><th scope="col" class="num">N (g=30)</th></tr></thead><tbody>';
   sorted.forEach(function(s){
     ah+='<tr><td><strong>'+s.id+'</strong> '+s.name+'</td><td>'+s.date_label+'</td>';
-    ah+='<td>'+s.N.g25.toLocaleString()+'</td>';
-    ah+='<td><strong>'+s.N.g269.toLocaleString()+'</strong></td>';
-    ah+='<td>'+s.N.g30.toLocaleString()+'</td></tr>';
+    ah+='<td class="num">'+s.N.g25.toLocaleString()+'</td>';
+    ah+='<td class="num"><strong>'+s.N.g269.toLocaleString()+'</strong></td>';
+    ah+='<td class="num">'+s.N.g30.toLocaleString()+'</td></tr>';
   });
-  ah+='</tbody></table>';
+  ah+='</tbody></table></div>';
   document.getElementById('anchorTable').innerHTML=ah;
 
   /* Threshold Table */
@@ -264,17 +264,17 @@
     var r={CONFIRMED:4,PROBABLE:3,UNDERDETERMINED:2,RUPTURED:1,NULL:0};
     return(r[lvl.strat]||0)>=(r[lvl.cust]||0)?lvl.strat:lvl.cust;
   }
-  var th='<table class="data-table"><thead><tr><th>Tradition</th><th>N</th><th>Material</th><th>Practice</th><th>Semantic</th><th>Channels</th></tr></thead><tbody>';
+  var th='<div class="table-wrap" role="region" aria-labelledby="threshold-table-caption" tabindex="0"><table class="data-table"><caption id="threshold-table-caption">Threshold coverage by tradition</caption><thead><tr><th scope="col">Tradition</th><th scope="col" class="num">N</th><th scope="col">Material</th><th scope="col">Practice</th><th scope="col">Semantic</th><th scope="col">Channels</th></tr></thead><tbody>';
   sorted.forEach(function(s){
     var ch=s.scores.material.cust!=='NULL'?'Strat + Cust':'Strat only';
     th+='<tr><td><strong>'+s.id+'</strong> '+s.name+'</td>';
-    th+='<td>'+s.N.g269.toLocaleString()+'</td>';
+    th+='<td class="num">'+s.N.g269.toLocaleString()+'</td>';
     th+='<td>'+badge(bestOf(s.scores.material))+'</td>';
     th+='<td>'+badge(bestOf(s.scores.practice))+'</td>';
     th+='<td>'+badge(bestOf(s.scores.semantic))+'</td>';
     th+='<td><em>'+ch+'</em></td></tr>';
   });
-  th+='</tbody></table>';
+  th+='</tbody></table></div>';
   document.getElementById('thresholdTable').innerHTML=th;
 })();
 </script>

@@ -8,9 +8,6 @@
   <style>
     .entry { margin-bottom: 2.5rem; }
     .entry h3 { margin-bottom: .5rem; }
-    .score-grid { width: 100%; border-collapse: collapse; margin: .75rem 0; font-size: .9rem; }
-    .score-grid th, .score-grid td { padding: .4rem .6rem; border-bottom: 1px solid var(--gold-dark); text-align: left; }
-    .score-grid th { font-family: 'Special Elite', monospace; text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; color: var(--ink-light); }
     .disc-box { border-left: 3px solid var(--burnt-sienna); padding: .5rem .75rem; margin: .75rem 0; font-size: .9rem; background: rgba(160,82,45,.06); }
     .disc-box strong { font-family: 'Special Elite', monospace; }
     .feas-LOW { color: var(--red-seal); }
@@ -83,14 +80,16 @@
       h+='<dt>N (g=26.9)</dt><dd>~'+s.N.g269.toLocaleString()+'</dd>';
       h+='<dt>Sources</dt><dd>'+s.sources.join('; ')+'</dd></dl>';
 
-      h+='<table class="score-grid"><thead><tr><th>Level</th><th>Strat</th><th>Cust</th></tr></thead><tbody>';
+      var tableId='ledger-score-'+s.id.toLowerCase();
+      h+='<div class="table-wrap" role="region" aria-labelledby="'+tableId+'-caption" tabindex="0">';
+      h+='<table class="score-grid stackable"><caption id="'+tableId+'-caption">'+s.id+' score grid by evidence channel</caption><thead><tr><th scope="col">Level</th><th scope="col">Strat</th><th scope="col">Cust</th></tr></thead><tbody>';
       ['material','practice','semantic'].forEach(function(lvl){
         var sc=s.scores[lvl];
-        h+='<tr><td style="text-transform:capitalize">'+lvl+'</td>';
-        h+='<td>'+badge(sc.strat,sc.annotation)+'</td>';
-        h+='<td>'+badge(sc.cust)+'</td></tr>';
+        h+='<tr><td data-label="Level" style="text-transform:capitalize">'+lvl+'</td>';
+        h+='<td data-label="Strat">'+badge(sc.strat,sc.annotation)+'</td>';
+        h+='<td data-label="Cust">'+badge(sc.cust)+'</td></tr>';
       });
-      h+='</tbody></table>';
+      h+='</tbody></table></div>';
       h+='<p>'+s.notes+'</p>';
 
       if(s.discriminant){
